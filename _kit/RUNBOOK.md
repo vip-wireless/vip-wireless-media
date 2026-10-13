@@ -4,6 +4,10 @@ Read this fully before making the day's post. Store facts, tone, deals and revie
 live in the Google Doc "VIP Wireless – Content Brief (read me first)" (Drive file id 19p4WsC-54k2_YgSHTAfZpzOqPbky8L1Q_3nfdT-OcQE) in the Drive folder
 "VIP Wireless – Social Content" — read it every run; it overrides this file if they differ.
 
+## Services to promote
+Repairs (main focus), unlocked phones for sale, buying phones for cash, accessories,
+Ria money transfer, SIM activation.
+
 ## Hard rules
 - Nothing is published without the owner's explicit approval in chat that day.
 - Never open, log into, or act on Facebook, Instagram or TikTok through any browser or the
@@ -92,5 +96,12 @@ watch time drive reach on all three platforms.
 5. Current deal (free screen protector with every repair)
 6. Android repairs too (Samsung/Galaxy etc.)
 7. Store & neighborhood: walk-ins welcome, hours, accessories, Ria transfer, SIM activation
+8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
+9. We buy phones: sell your old phone for cash at the store (bring it in for a quote)
+
+Sales posts: never invent prices, stock, models or conditions. Only name specific models,
+prices or offers the owner has given (in the brief or in chat); otherwise keep it general
+("unlocked iPhones & Androids in stock — stop by and see what we've got"). For buying:
+"walk in for a quote", no promised amounts.
 
 Brand: black background, VIP red #D71928, white; Inter font; logo in `_kit/brand`.
