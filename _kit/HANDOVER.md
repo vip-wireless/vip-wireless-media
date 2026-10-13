@@ -1,5 +1,14 @@
 # Handing the VIP Wireless posting system to a new operator
 
+**Quick version:** after giving access (section 1), the new operator opens a new Claude chat
+and sends one message:
+
+> Set up the VIP Wireless posting system from github.com/vip-wireless/vip-wireless-media
+
+Claude reads `_kit/SETUP.md`, checks every connection, tells them exactly what's missing,
+and then asks once for permission before creating the three scheduled tasks below. The
+previous operator then deletes their own copies of the tasks.
+
 Everything the daily routine needs lives in store-owned places. A new operator only has to
 connect their own Claude account to them and re-create three scheduled tasks.
 
