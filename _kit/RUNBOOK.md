@@ -99,9 +99,16 @@ watch time drive reach on all three platforms.
 8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
 9. We buy phones: sell your old phone for cash at the store (bring it in for a quote)
 
-Sales posts: never invent prices, stock, models or conditions. Only name specific models,
-prices or offers the owner has given (in the brief or in chat); otherwise keep it general
-("unlocked iPhones & Androids in stock — stop by and see what we've got"). For buying:
-"walk in for a quote", no promised amounts.
+Sales & buying posts: we sell new and used phones, mostly Apple, Samsung and Motorola, and
+we buy unlocked phones. Never invent prices, stock, models or conditions; only name specific
+models/prices/offers the owner has given. For buying: "call or walk in for a quote", no
+promised amounts.
+
+Call-first rule (all posts): the goal is to get people to CALL 380-271-8085 or walk in.
+- Never mention what we don't repair, buy or sell, or any conditions/limits on repairs or
+  phones we buy. Keep it open: "Not sure what's wrong? Call us and we'll take a look."
+- But don't over-promise either: no "we fix anything", "any phone, any problem" or
+  "we buy every phone". Invite the question instead.
+- Every post's CTA leads with the phone number (call / text-friendly wording) plus "or walk in".
 
 Brand: black background, VIP red #D71928, white; Inter font; logo in `_kit/brand`.
