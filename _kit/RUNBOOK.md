@@ -38,8 +38,12 @@ would be exceeded, treat the day as manual and say so.
 4. Save `posts/YYYY-MM-DD/` (video, optional image, captions.txt), commit as
    "VIP Wireless Bot <bot@vip-wireless.invalid>", push to main.
 5. Send the owner (proactive, so it reaches the phone): the video + image files and a short
-   message with both captions, whether today is a Metricool day or manual, and
-   "Reply 'approved' or tell me what to change."
+   message with both captions and "Reply 'approved' or tell me what to change."
+   Open the message with the day's posting plan, in bold, on its own line:
+   - Manual day (Tue/Thu/Sun): "📣 TODAY IS YOUR DAY TO POST — Instagram (with Share to
+     Facebook on) and TikTok. I'll check in at 11 AM."
+   - Metricool day (Mon/Wed/Fri/Sat): "✅ Metricool posts this to Instagram at 11 AM after you
+     approve (15 min after approval if you approve later). You post TikTok."
 6. Wait for the reply. Apply changes, re-render, re-push, re-send until approved.
 7. After approval:
    - Metricool day: createScheduledPost for brand blogId 7406481, network instagram,
