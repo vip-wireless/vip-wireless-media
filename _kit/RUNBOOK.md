@@ -80,29 +80,33 @@ watch time drive reach on all three platforms.
   that invites comments ("What's the worst crack you've ever had? 👇").
 - Local SEO: say "Columbus" / "Whitehall" / "iPhone screen repair" in on-screen text and
   caption (TikTok and Instagram search read them). 3–5 targeted hashtags, not 30.
-- Sound: suggest a trending sound from TikTok's Commercial Music Library (keeps the post
-  boostable); avoid popular copyrighted songs on posts that might be boosted.
+- Sound: see the Music section below.
 - Run series ("Phone Myth Monday", "15-Minute Fix") so people come back.
 - Honest claims only: no fake urgency, no invented customers or numbers, reviews quoted as
   written, 15-minute fine print kept.
 - Every morning message: one line on why this post should perform (hook/format), so the owner
   learns what works. Monthly, use Metricool analytics to see which formats won and do more of those.
 
-## Boost-ready rules (any post may later be boosted on Instagram/Facebook or TikTok Promote)
-- Business phone number is fine in ads. Put it on the end card and in the caption; don't
-  stamp it on every scene.
-- Keep on-screen text short and legible (big type, few words per scene); no tiny or cut-off
-  text — ad review rejects illegible text.
-- Evergreen by default: avoid "today", dates, days of the week or "this weekend" in the
-  video itself so it can be boosted weeks later. Time-limited deals: put the timing in the
-  caption, not burned into the video, and tag the post as a deal in LOG.md.
-- No unprovable superlatives or guarantees ("best in Columbus", "cheapest", "guaranteed").
-  Keep the 15-minute fine print. Reviews quoted exactly as written.
-- Never show customers' faces, names, phone screens with personal info, or anyone's
-  contact details without permission.
-- Music: suggest commercial-safe sounds only (TikTok Commercial Music Library / royalty-free).
-  Popular copyrighted songs can block boosting on Instagram and TikTok.
-- Caption: correct spelling and grammar, consistent with the video.
+## Two kinds of posts: boost-ready and organic
+Tag every post in the morning message and LOG.md as **Boost-ready** or **Organic**.
+Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost any of them.
+- Boost-ready posts: phone number on the end card/caption (not every scene); short legible
+  text; evergreen (no "today"/dates burned into the video; timing goes in the caption);
+  no "best/cheapest/guaranteed"; commercial-safe music only (TikTok Commercial Music Library,
+  Instagram library tracks added via Metricool); no customer faces/names/personal screens.
+- Organic posts: free to chase reach — trending sounds (even popular songs), "today"/timely
+  hooks, memes, bolder humor, trends, stitches/duets ideas for the owner.
+- Both kinds: still images are fine too (a clean graphic with the phone number works well
+  for Instagram/Facebook). Always truthful — no fake reviews, invented customers, made-up
+  numbers or stock, and keep the 15-minute fine print. Call-first rule still applies.
+
+## Music
+- Metricool days (Instagram Reel): add a track from Instagram's library through Metricool's
+  audioConfiguration (pass a song/artist search term as audioId; set videoVolume 100,
+  audioVolume ~25–40 so on-screen text/voice stays clear). If Metricool rejects the audio
+  (e.g., account not eligible), schedule without it and tell the owner.
+- Manual days and TikTok: name 1–2 specific sound suggestions in the morning message
+  (commercial-library ones for boost-ready posts; trending ones allowed for organic posts).
 
 ## Theme rotation (repeat)
 1. 15-minute screen/battery fix
