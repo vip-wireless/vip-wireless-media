@@ -55,6 +55,35 @@ would be exceeded, treat the day as manual and say so.
    - Every day: TikTok is manual — remind the owner.
 8. Append a line to `LOG.md` (date, theme, review used if any, Metricool or manual) and push.
 
+## Reach playbook (apply to every post)
+Goal: stop the scroll, get watched to the end, get saved/shared/commented. Engagement and
+watch time drive reach on all three platforms.
+- HOOK in the first 1–2 seconds: big on-screen text that creates curiosity or calls out the
+  viewer ("Your iPhone battery is lying to you", "Don't pay $300 for this", "POV: you dropped
+  your phone at 9 AM and need it by lunch"). No logo intro — logo stays small in the corner.
+- Keep videos 7–15s, one idea, a visual change every 1–2s (cuts, zooms, text pops). End on a
+  loopable frame or a payoff so people rewatch.
+- Real footage beats graphics: when the owner has clips/photos (screen swaps, timers, cracked
+  phones, the shop), build around them; text-only templates are the fallback.
+- Give value people save/share: quick tips, myths vs facts, "3 signs your battery needs
+  replacing", "don't do this if your phone gets wet".
+- Formats to rotate: POV, before → after, timer/race ("15:00 on the clock"), myth vs fact,
+  "things phone shops won't tell you", guess-the-damage, review reaction, day-in-the-shop,
+  customer question answered.
+- Copy: short punchy lines, conversational, one emoji per line max, no corporate words.
+  First caption line = the hook again (it shows before "more"). End with ONE clear CTA
+  (walk in today / save this / send to the friend with the cracked screen) or a question
+  that invites comments ("What's the worst crack you've ever had? 👇").
+- Local SEO: say "Columbus" / "Whitehall" / "iPhone screen repair" in on-screen text and
+  caption (TikTok and Instagram search read them). 3–5 targeted hashtags, not 30.
+- TikTok: suggest the owner add a trending sound at low volume; Instagram Reels via
+  Metricool: add an Instagram-library track when available.
+- Run series ("Phone Myth Monday", "15-Minute Fix") so people come back.
+- Honest claims only: no fake urgency, no invented customers or numbers, reviews quoted as
+  written, 15-minute fine print kept.
+- Every morning message: one line on why this post should perform (hook/format), so the owner
+  learns what works. Monthly, use Metricool analytics to see which formats won and do more of those.
+
 ## Theme rotation (repeat)
 1. 15-minute screen/battery fix
 2. Google review spotlight (one approved review)
