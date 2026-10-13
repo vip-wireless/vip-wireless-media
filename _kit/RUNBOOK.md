@@ -59,6 +59,23 @@ would be exceeded, treat the day as manual and say so.
    - Every day: TikTok is manual — remind the owner.
 8. Append a line to `LOG.md` (date, theme, review used if any, Metricool or manual) and push.
 
+## Trends, events and deal ideas (every run)
+- Before picking the theme, do a quick web search for what's trending right now that a local
+  phone shop can ride: TikTok/Instagram trend formats and memes, new iPhone/Samsung/iOS
+  releases or bugs, viral phone moments, weather (snow, rain, heat = phone tips), local
+  Columbus news. Use a trend when it fits naturally; otherwise follow the rotation.
+- Event calendar: Halloween, Thanksgiving, Black Friday / Cyber Monday, Christmas, New Year,
+  Valentine's Day, Super Bowl, Mother's/Father's Day, back-to-school, July 4th, new iPhone
+  launch (September), tax-refund season, and Columbus game days (search the current Ohio
+  State football schedule). For game days use generic "game day" wording and colors —
+  no team names, logos or trademarks in boost-ready posts.
+- Deal ideas: when an event or game day is 10–21 days away, add a "💡 Deal idea" section to
+  that morning's message with 2–3 concrete promotion options (what, dates, rough cost to the
+  store, sample hook) and ask whether to run one. Suggest each event once (note it in
+  LOG.md); remind once more ~5 days before if no answer.
+- Never announce, imply or advertise a deal the owner hasn't approved in chat. Approved deals
+  go into the brief/LOG.md with start and end dates.
+
 ## Reach playbook (apply to every post)
 Goal: stop the scroll, get watched to the end, get saved/shared/commented. Engagement and
 watch time drive reach on all three platforms.
