@@ -57,7 +57,13 @@ would be exceeded, treat the day as manual and say so.
    - Manual day: remind the owner to post to Instagram from the IG app (Share to Facebook
      on) and to TikTok (add a trending sound / TikTok text-to-speech if they like).
    - Every day: TikTok is manual — remind the owner.
-8. Append a line to `LOG.md` (date, theme, review used if any, Metricool or manual) and push.
+8. Update the Google Sheet "VIP Wireless – Content Calendar" (id
+   1bQR_DHjF2qcL37Y8VMgzoplbJ3a5c0vYcsRmh-uv4-A) in place with the Google Sheets connector:
+   today's row → Planned content (what was made), Post type, Status (Draft sent / Approved /
+   Scheduled in Metricool / Posted), Notes. Add planned future items (approved deals,
+   countdowns, deal ideas awaiting a decision) to their rows. Never recreate the sheet; if
+   the Sheets connector isn't available, skip this and tell the owner once.
+9. Append a line to `LOG.md` (date, theme, review used if any, Metricool or manual) and push.
 
 ## Trends, events and deal ideas (every run)
 - Before picking the theme, do a quick web search for what's trending right now that a local
