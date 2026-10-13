@@ -80,13 +80,29 @@ watch time drive reach on all three platforms.
   that invites comments ("What's the worst crack you've ever had? 👇").
 - Local SEO: say "Columbus" / "Whitehall" / "iPhone screen repair" in on-screen text and
   caption (TikTok and Instagram search read them). 3–5 targeted hashtags, not 30.
-- TikTok: suggest the owner add a trending sound at low volume; Instagram Reels via
-  Metricool: add an Instagram-library track when available.
+- Sound: suggest a trending sound from TikTok's Commercial Music Library (keeps the post
+  boostable); avoid popular copyrighted songs on posts that might be boosted.
 - Run series ("Phone Myth Monday", "15-Minute Fix") so people come back.
 - Honest claims only: no fake urgency, no invented customers or numbers, reviews quoted as
   written, 15-minute fine print kept.
 - Every morning message: one line on why this post should perform (hook/format), so the owner
   learns what works. Monthly, use Metricool analytics to see which formats won and do more of those.
+
+## Boost-ready rules (any post may later be boosted on Instagram/Facebook or TikTok Promote)
+- Business phone number is fine in ads. Put it on the end card and in the caption; don't
+  stamp it on every scene.
+- Keep on-screen text short and legible (big type, few words per scene); no tiny or cut-off
+  text — ad review rejects illegible text.
+- Evergreen by default: avoid "today", dates, days of the week or "this weekend" in the
+  video itself so it can be boosted weeks later. Time-limited deals: put the timing in the
+  caption, not burned into the video, and tag the post as a deal in LOG.md.
+- No unprovable superlatives or guarantees ("best in Columbus", "cheapest", "guaranteed").
+  Keep the 15-minute fine print. Reviews quoted exactly as written.
+- Never show customers' faces, names, phone screens with personal info, or anyone's
+  contact details without permission.
+- Music: suggest commercial-safe sounds only (TikTok Commercial Music Library / royalty-free).
+  Popular copyrighted songs can block boosting on Instagram and TikTok.
+- Caption: correct spelling and grammar, consistent with the video.
 
 ## Theme rotation (repeat)
 1. 15-minute screen/battery fix
