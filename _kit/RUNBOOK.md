@@ -99,8 +99,9 @@ watch time drive reach on all three platforms.
 8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
 9. We buy phones: sell your old phone for cash at the store (bring it in for a quote)
 
-Sales & buying posts: we sell new and used phones, mostly Apple, Samsung and Motorola, and
-we buy unlocked phones. Never invent prices, stock, models or conditions; only name specific
+Sales & buying posts: we sell new and used iPhones and Android phones (mostly Apple, Samsung,
+Motorola) and we buy unlocked phones. In posts say "iPhones & Androids" and always send
+people to call for current stock ("Call 380-271-8085 to check what's in stock today"). Never invent prices, stock, models or conditions; only name specific
 models/prices/offers the owner has given. For buying: "call or walk in for a quote", no
 promised amounts.
 
