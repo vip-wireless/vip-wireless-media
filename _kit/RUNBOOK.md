@@ -73,6 +73,12 @@ would be exceeded, treat the day as manual and say so.
   that morning's message with 2–3 concrete promotion options (what, dates, rough cost to the
   store, sample hook) and ask whether to run one. Suggest each event once (note it in
   LOG.md); remind once more ~5 days before if no answer.
+- Countdown series for big-sale events (Black Friday, Christmas, approved deals, iPhone
+  launch): when the owner approves a deal, plan a countdown — e.g. 7 days, 3 days, 1 day,
+  "today's the day", "last chance" — in the normal daily slots (they replace the rotation on
+  those days). Countdown visuals can show the number big ("3 DAYS"); they are time-bound, so
+  tag them Organic. Lay out the countdown dates in the morning message when the deal is
+  approved.
 - Never announce, imply or advertise a deal the owner hasn't approved in chat. Approved deals
   go into the brief/LOG.md with start and end dates.
 
