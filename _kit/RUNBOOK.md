@@ -137,6 +137,19 @@ Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost a
 - Manual days and TikTok: name 1–2 specific sound suggestions in the morning message
   (commercial-library ones for boost-ready posts; trending ones allowed for organic posts).
 
+## Voiceover (owner wants a natural AI voice on every video, from 2026-10-14)
+- Write a ~12–15s voiceover script timed to the scenes (hook in the first 2s, ends with the
+  phone number). Spoken lines may say "about 15 minutes"; the fine print stays on screen.
+- If a text-to-speech connector is available (owner plans to connect Speko), generate a
+  natural-sounding voice (friendly, conversational; not robotic), get the audio file into the
+  workspace, and mix it into the mp4 with ffmpeg (voice ~100%, leave room for music).
+  Check timing against the rendered scenes; re-time scenes if a line runs long.
+  On Metricool days keep any Instagram library track low (audioVolume ~15–20) under the voice.
+- If no TTS connector works (not connected, or its audio can't be downloaded here), send the
+  video without voice, include the script in the morning message, and tell the owner once in
+  that message why (and that TikTok's built-in Text-to-speech can voice it). Never use a
+  robotic fallback like espeak.
+
 ## Theme rotation (repeat)
 1. 15-minute screen/battery fix
 2. Google review spotlight (one approved review)
