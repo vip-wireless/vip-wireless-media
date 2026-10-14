@@ -1,0 +1,88 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0a0a0b;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.38),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
+.logo{position:absolute;left:340px;top:120px;height:96px;width:400px;overflow:hidden;z-index:5}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.scene{position:absolute;left:80px;right:140px;top:260px;bottom:380px;display:flex;flex-direction:column;justify-content:center;opacity:0}
+@keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}90%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:translateX(-80px)}100%{opacity:1;transform:none}}
+.s1{animation:inout 2.6s .1s both}
+.s2{animation:inout 4.2s 2.7s both}
+.s3{animation:inout 2.8s 6.9s both}
+.s4{animation:inout 2.4s 9.7s both}
+.s5{animation:inhold 2.6s 12.1s both}
+.big{font-size:132px;font-weight:900;line-height:.98;letter-spacing:-.035em}
+.red{color:#e01e2e}
+.sub{font-size:48px;color:#cfcfd4;margin-top:40px;font-weight:500;line-height:1.3}
+.tag{display:inline-block;align-self:flex-start;background:#d71928;font-weight:800;font-size:36px;letter-spacing:.1em;padding:14px 26px;border-radius:10px;text-transform:uppercase;margin-bottom:40px}
+.fine{font-size:30px;color:#9a9aa1;margin-top:40px;line-height:1.4}
+.sign{display:flex;gap:30px;align-items:center;margin-top:44px;opacity:0}
+.sign .n{flex:none;width:120px;height:120px;border-radius:50%;background:#d71928;font-size:68px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.sign .t{font-size:58px;font-weight:800;line-height:1.1;letter-spacing:-.02em}
+.sign .t span{display:block;font-size:36px;color:#b9b9c0;font-weight:500;margin-top:6px;letter-spacing:0}
+.p1{animation:pop .35s 3.2s both}.p2{animation:pop .35s 4.3s both}.p3{animation:pop .35s 5.4s both}
+.batt{width:300px;height:150px;border:12px solid #fff;border-radius:28px;position:relative;margin-bottom:60px}
+.batt:after{content:"";position:absolute;right:-40px;top:38px;width:22px;height:50px;background:#fff;border-radius:0 10px 10px 0}
+.batt i{position:absolute;left:12px;top:12px;bottom:12px;background:#e01e2e;border-radius:10px;animation:drain 2.2s .3s ease-in both}
+@keyframes drain{from{width:252px}to{width:24px}}
+.photo{width:100%;height:760px;border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);border:4px solid #d71928}
+.photo img{width:100%;height:100%;object-fit:cover;animation:zoom 2.8s 6.9s linear both}
+@keyframes zoom{from{transform:scale(1.02)}to{transform:scale(1.14)}}
+.timer{font-size:120px;font-weight:900;letter-spacing:-.04em;line-height:1;margin-top:40px}
+.stars{font-size:90px;color:#ffc31a;letter-spacing:.05em}
+.quote{font-size:70px;font-weight:800;line-height:1.14;margin-top:30px;letter-spacing:-.02em}
+.who{font-size:40px;color:#a9a9b0;margin-top:40px;font-weight:600}
+.g{margin-top:24px;font-size:34px;color:#cfcfd4;font-weight:600}
+.badge{width:280px;height:280px;border-radius:50%;background:#d71928;display:flex;flex-direction:column;align-items:center;justify-content:center;align-self:center;transform:rotate(-8deg);box-shadow:0 30px 80px rgba(215,25,40,.5);margin-bottom:50px}
+.badge b{font-size:86px;font-weight:900;line-height:1}
+.badge span{font-size:30px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-align:center;line-height:1.15;margin-top:8px}
+.cta{font-size:84px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.info{text-align:center;margin-top:50px;font-size:40px;line-height:1.5;color:#cfcfd4}
+.info b{display:block;font-size:84px;color:#fff;font-weight:900;margin-bottom:10px}
+.walk{text-align:center;margin-top:34px;font-size:36px;font-weight:800;color:#e01e2e;letter-spacing:.12em;text-transform:uppercase}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:#d71928;animation:bar 14.6s linear forwards}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="scene s1">
+  <div class="batt"><i></i></div>
+  <div class="big">Your battery is <span class="red">trying to tell you</span> something.</div>
+  <div class="sub">Hey Columbus — check these 3 signs 👇</div>
+</div>
+
+<div class="scene s2">
+  <div class="tag">3 signs it needs a new battery</div>
+  <div class="sign p1"><div class="n">1</div><div class="t">Dead before lunch<span>even after a full charge</span></div></div>
+  <div class="sign p2"><div class="n">2</div><div class="t">Shuts off at 20–30%<span>or restarts on its own</span></div></div>
+  <div class="sign p3"><div class="n">3</div><div class="t">Battery Health under 80%<span>Settings › Battery › Health</span></div></div>
+</div>
+
+<div class="scene s3">
+  <div class="photo"><img src="../../_kit/photos/photo_07_repair_in_progress.jpg"></div>
+  <div class="timer">~15 min <span class="red">battery swap</span></div>
+  <div class="fine">Most iPhone screens &amp; batteries. Back glass &amp; other repairs may take longer and depend on parts availability.</div>
+</div>
+
+<div class="scene s4">
+  <div class="stars">★★★★★</div>
+  <div class="quote">“They were able to quickly replace my phone battery so I could use my phone the same day.”</div>
+  <div class="who">— Kennedy S.</div>
+  <div class="g">Google review · 4.9★ from 119 reviews</div>
+</div>
+
+<div class="scene s5">
+  <div class="badge"><b>FREE</b><span>Screen<br>protector</span></div>
+  <div class="cta">with every<br>repair 🎁</div>
+  <div class="info"><b>380-271-8085</b>Call or text · 4257 E Main St, Whitehall<br>Open daily 10:30 AM – 8 PM</div>
+  <div class="walk">Or just walk in</div>
+</div>
+<div class="bar"></div>
+</body></html>
