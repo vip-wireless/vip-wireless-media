@@ -19,13 +19,16 @@ Ria money transfer, SIM activation.
 - Prefer the store's own photos/videos (Drive folders 1–3, `_kit/photos`) over stock.
 
 ## Weekly split (America/New_York)
+Owner's instruction (2026-10-16): posts are made ONLY on Metricool days. Tue, Thu and Sun
+are the owner's own days — make nothing, send nothing, and skip them in the rotation.
 | Day | Instagram (+Facebook auto-share) | TikTok |
 |---|---|---|
 | Mon, Wed, Fri, Sat | Metricool schedules it after approval | Owner posts manually |
-| Tue, Thu, Sun | Owner posts manually | Owner posts manually |
+| Tue, Thu, Sun | No post from us (owner's day) | No post from us |
+If a run starts on Tue/Thu/Sun, stop without making or sending anything.
 Metricool Free = 20 published posts/month per brand; 4 days/week stays under it.
 Before scheduling, count this month's Metricool posts (getScheduledPosts + LOG.md); if 20
-would be exceeded, treat the day as manual and say so.
+would be exceeded, don't schedule — tell the owner and ask them to post Instagram themselves.
 
 ## Steps each morning
 1. Read the brief doc, `LOG.md` (what's been posted — don't repeat a topic within 7 days or
@@ -34,7 +37,12 @@ would be exceeded, treat the day as manual and say so.
 2. Pick today's theme from the rotation below.
 3. Make the content:
    - ALWAYS a vertical video, 1080x1920, 8–15s, built from `_kit/templates/video_template.html`
-     (copy to `posts/YYYY-MM-DD/`, edit text/scenes/photos, render with `_kit/render.py video`).
+     (DARK) or `_kit/templates/video_template_light.html` (LIGHT)
+     (copy to `posts/YYYY-MM-DD/`, fix the logo path to `../../_kit/brand/logo_wide.jpg`,
+     edit text/scenes/photos, render with `_kit/render.py video`).
+   - Mix DARK and LIGHT (owner, 2026-10-16: "too much dark doesn't look good all the time").
+     Check the Look column in LOG.md: never more than 2 posts in a row in the same look, and aim
+     for roughly half light. Image posts have the same pair (`image_post_template_light.html`).
      Keep key text inside the middle area (TikTok/Reels UI covers the bottom ~350px and right edge).
    - Optional still 1080x1350 from `_kit/templates/image_post_template.html` when a photo post fits better.
    - Captions: Instagram/Facebook caption and TikTok caption (shorter, 3–5 hashtags), local & friendly.
@@ -44,26 +52,22 @@ would be exceeded, treat the day as manual and say so.
 5. Send the owner (proactive, so it reaches the phone): the video + image files and a short
    message with both captions and "Reply 'approved' or tell me what to change."
    Open the message with the day's posting plan, in bold, on its own line:
-   - Manual day (Tue/Thu/Sun): "📣 TODAY IS YOUR DAY TO POST — Instagram (with Share to
-     Facebook on) and TikTok. I'll check in at 11 AM."
-   - Metricool day (Mon/Wed/Fri/Sat): "✅ Metricool posts this to Instagram at 11 AM after you
-     approve (15 min after approval if you approve later). You post TikTok."
+   "✅ Metricool posts this to Instagram at 11 AM after you approve (15 min after approval if
+   you approve later). You post TikTok."
 6. Wait for the reply. Apply changes, re-render, re-push, re-send until approved.
 7. After approval:
    - Metricool day: createScheduledPost for brand blogId 7406481, network instagram,
      type REEL with the raw.githubusercontent.com link to the mp4 (or POST with the image),
      autoPublish true, timezone America/New_York, time = 11:00 AM, or 15 minutes after
      approval if later. Confirm with the plannerUrl.
-   - Manual day: remind the owner to post to Instagram from the IG app (Share to Facebook
-     on) and to TikTok (add a trending sound / TikTok text-to-speech if they like).
-   - Every day: TikTok is manual — remind the owner.
+   - TikTok is always manual — remind the owner (add a sound / TikTok text-to-speech).
 8. Update the Google Sheet "VIP Wireless – Content Calendar" (id
    1bQR_DHjF2qcL37Y8VMgzoplbJ3a5c0vYcsRmh-uv4-A) in place with the Google Sheets connector:
    today's row → Planned content (what was made), Post type, Status (Draft sent / Approved /
    Scheduled in Metricool / Posted), Notes. Add planned future items (approved deals,
    countdowns, deal ideas awaiting a decision) to their rows. Never recreate the sheet; if
    the Sheets connector isn't available, skip this and tell the owner once.
-9. Append a line to `LOG.md` (date, theme, review used if any, Metricool or manual) and push.
+9. Append a line to `LOG.md` (date, theme, look DARK/LIGHT, review used if any, channel) and push.
 
 ## Trends, events and deal ideas (every run)
 - Before picking the theme, do a quick web search for what's trending right now that a local
@@ -134,7 +138,7 @@ Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost a
   audioConfiguration (pass a song/artist search term as audioId; set videoVolume 100,
   audioVolume ~25–40 so on-screen text/voice stays clear). If Metricool rejects the audio
   (e.g., account not eligible), schedule without it and tell the owner.
-- Manual days and TikTok: name 1–2 specific sound suggestions in the morning message
+- TikTok: name 1–2 specific sound suggestions in the morning message
   (commercial-library ones for boost-ready posts; trending ones allowed for organic posts).
 
 ## Voiceover (owner wants a natural AI voice on every video, from 2026-10-14)
@@ -174,4 +178,5 @@ Call-first rule (all posts): the goal is to get people to CALL 380-271-8085 or w
   "we buy every phone". Invite the question instead.
 - Every post's CTA leads with the phone number (call / text-friendly wording) plus "or walk in".
 
-Brand: black background, VIP red #D71928, white; Inter font; logo in `_kit/brand`.
+Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background;
+Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).

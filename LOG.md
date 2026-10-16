@@ -9,3 +9,4 @@
 | 2026-10-14 | Phone-care tip: 3 signs your battery needs replacing (video, Boost-ready) — approved ~7:30 AM | Kennedy S. | Metricool: IG Reel scheduled 11:00 AM (audio 'Make It'); TikTok manual — POSTED by owner (confirmed at 11 AM check-in) |
 | 2026-10-15 | Real repair: before → after cracked iPhone screen (video, Boost-ready) — draft sent ~6:50 AM, awaiting approval | — | Manual day: owner posts IG (+FB) and TikTok |
 | 2026-10-16 | Current deal: FREE screen protector with every repair (video, Boost-ready) — draft sent ~6:50 AM, approved ~12:50 PM | Mark M. | Metricool: IG Reel scheduled 1:05 PM (audio 'Make It', vol 30); TikTok manual — owner posts |
+| 2026-10-16 | OWNER RULES: (1) only make posts on Metricool days Mon/Wed/Fri/Sat — skip Tue/Thu/Sun entirely; (2) mix LIGHT and DARK looks (light templates added), never 3 in a row the same. Oct 14–16 were all DARK → next post should be LIGHT. | — | rule |

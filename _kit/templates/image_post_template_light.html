@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:local("Inter")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px}
+body{background:#f7f5f2;font-family:Inter,sans-serif;color:#141416;overflow:hidden;position:relative}
+.glow{position:absolute;width:900px;height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(215,25,40,.14) 0%,rgba(215,25,40,0) 65%);
+  right:-260px;top:300px}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.045) 1px,transparent 1px);background-size:60px 60px}
+.logo{position:absolute;left:56px;top:50px;height:124px;overflow:hidden;width:456px;background:#0a0a0b;border-radius:62px;padding:8px 8px 0 8px;box-shadow:0 12px 30px rgba(0,0,0,.16)}
+.logo img{mix-blend-mode:lighten;height:204px;margin-top:-47px;margin-left:-28px}
+.tag{position:absolute;right:64px;top:92px;font-size:22px;font-weight:600;letter-spacing:.14em;color:#6e6e76;text-transform:uppercase}
+.head{position:absolute;left:64px;top:230px;width:600px}
+.kicker{display:inline-block;background:#d71928;color:#fff;font-weight:800;font-size:24px;letter-spacing:.12em;padding:10px 18px;border-radius:6px;text-transform:uppercase}
+h1{font-size:96px;line-height:.95;font-weight:900;letter-spacing:-.03em;margin-top:30px}
+h1 span{color:#d71928}
+.sub{font-size:34px;line-height:1.3;color:#4a4a52;margin-top:30px;font-weight:500;width:520px}
+.phone{position:absolute;right:90px;top:250px;width:330px;height:660px;border-radius:52px;background:#1b1b1f;border:3px solid #3a3a40;box-shadow:0 40px 80px rgba(0,0,0,.6),inset 0 0 0 10px #111}
+.screen{position:absolute;inset:16px;border-radius:40px;overflow:hidden;background:linear-gradient(160deg,#2a2a31,#121216)}
+.screen svg{position:absolute;inset:0}
+.notch{position:absolute;top:24px;left:50%;transform:translateX(-50%);width:110px;height:30px;background:#000;border-radius:20px}
+.shield{position:absolute;right:30px;top:690px;width:200px;height:200px;border-radius:50%;background:#d71928;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 20px 50px rgba(215,25,40,.45);border:6px solid #f7f5f2;transform:rotate(-8deg);color:#fff}
+.shield b{font-size:50px;font-weight:900;line-height:1}
+.shield small{font-size:20px;font-weight:700;letter-spacing:.06em;line-height:1.15;margin-top:6px;text-transform:uppercase}
+.offer{position:absolute;left:64px;right:64px;top:960px;border:2px solid rgba(0,0,0,.08);border-radius:24px;padding:30px 36px;display:flex;align-items:center;gap:28px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.offer .ic{flex:none;width:78px;height:78px;border-radius:18px;background:#d71928;display:flex;align-items:center;justify-content:center}
+.offer p{font-size:34px;font-weight:700;line-height:1.25}
+.offer p span{display:block;font-size:24px;font-weight:500;color:#5c5c64;margin-top:6px}
+.foot{position:absolute;left:64px;right:64px;bottom:56px;display:flex;justify-content:space-between;align-items:flex-end;border-top:2px solid rgba(0,0,0,.1);padding-top:30px}
+.foot .tel{font-size:46px;font-weight:900;letter-spacing:-.01em}
+.foot .addr{font-size:24px;color:#5c5c64;margin-top:6px;font-weight:500}
+.foot .walk{text-align:right;font-size:24px;font-weight:700;color:#d71928;letter-spacing:.08em;text-transform:uppercase;line-height:1.5}
+</style></head>
+<body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../brand/logo_wide.jpg"></div>
+<div class="tag">Whitehall · Columbus</div>
+
+<div class="head">
+  <div class="kicker">Hey Columbus 👋</div>
+  <h1>Cracked<br>screen?<br><span>Fixed in<br>15 min.</span></h1>
+  <p class="sub">Grab a coffee, come back to a phone that looks brand new.</p>
+</div>
+
+<div class="phone"><div class="screen">
+  <svg viewBox="0 0 298 628" width="298" height="628">
+    <g stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M190 250 L120 120 L95 30"/><path d="M190 250 L260 150 L298 120"/>
+      <path d="M190 250 L60 300 L0 290"/><path d="M190 250 L230 380 L250 628"/>
+      <path d="M190 250 L130 420 L90 628"/><path d="M190 250 L298 290"/>
+      <path d="M120 120 L40 150"/><path d="M60 300 L70 420"/><path d="M230 380 L298 430"/>
+      <path d="M130 420 L230 380"/><path d="M120 120 L260 150"/>
+    </g>
+    <circle cx="190" cy="250" r="10" fill="rgba(255,255,255,.85)"/>
+  </svg>
+  <div class="notch"></div>
+</div></div>
+
+<div class="shield"><b>FREE</b><small>Screen<br>protector</small></div>
+
+<div class="offer">
+  <div class="ic"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+  <p>Free screen protector with every repair<span>Our little thank-you for choosing a local shop.</span></p>
+</div>
+
+<div class="foot">
+  <div><div class="tel">380-271-8085</div><div class="addr">4257 E Main St, Columbus, OH 43213</div></div>
+  <div class="walk">Walk-ins<br>welcome</div>
+</div>
+<div style="position:absolute;left:64px;top:1120px;font-size:18px;color:#6e6e76">15-minute service applies to most iPhone screen &amp; battery repairs. Other repairs depend on parts availability.</div></body></html>

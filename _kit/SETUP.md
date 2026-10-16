@@ -27,15 +27,15 @@ create them again — offer to update them instead. Remind the user that the pre
 operator must delete their copies so posts and reminders aren't doubled.
 
 ## Step 3 — one confirmation, then create
-Show the three tasks in a short table (name, schedule, what it does) and ask once:
-"Create these three scheduled tasks?" On yes, create each with the exact name, schedule
+Show the two tasks (A and C) in a short table (name, schedule, what it does) and ask once:
+"Create these two scheduled tasks?" On yes, create each with the exact name, schedule
 (timezone America/New_York) and prompt from `_kit/HANDOVER.md` section 2:
-- A. VIP Wireless daily post — `CRON_TZ=America/New_York 45 6 * * *`
-- B. VIP Wireless posting check-in — `CRON_TZ=America/New_York 0 11 * * 0,2,4`
+- A. VIP Wireless daily post — `CRON_TZ=America/New_York 45 6 * * 1,3,5,6`
+- (B. posting check-in is retired — owner makes no posts on Tue/Thu/Sun; skip it)
 - C. VIP Wireless TikTok check-in — `CRON_TZ=America/New_York 0 11 * * 1,3,5,6`
-Turn on push notifications for all three (email too for A). Copy prompts verbatim.
+Turn on push notifications for both (email too for A). Copy prompts verbatim.
 
 ## Step 4 — confirm
-Tell the user, in a few lines: the three tasks and their next run times, which approval
+Tell the user, in a few lines: the two tasks and their next run times, which approval
 setting they got, that the first draft arrives at 7 AM, and that nothing is published
 without their "approved". Add a line to LOG.md ("Setup/takeover by new operator") and push.
