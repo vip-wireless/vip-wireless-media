@@ -10,3 +10,4 @@
 | 2026-10-15 | Real repair: before → after cracked iPhone screen (video, Boost-ready) — draft sent ~6:50 AM, awaiting approval | — | Manual day: owner posts IG (+FB) and TikTok |
 | 2026-10-16 | Current deal: FREE screen protector with every repair (video, Boost-ready) — draft sent ~6:50 AM, approved ~12:50 PM | Mark M. | Metricool: IG Reel scheduled 1:05 PM (audio 'Make It', vol 30); TikTok manual — owner posts |
 | 2026-10-16 | OWNER RULES: (1) only make posts on Metricool days Mon/Wed/Fri/Sat — skip Tue/Thu/Sun entirely; (2) mix LIGHT and DARK looks (light templates added), never 3 in a row the same. Oct 14–16 were all DARK → next post should be LIGHT. | — | rule |
+| 2026-10-17 | Android repairs too (video, Boost-ready) — Look: LIGHT — draft sent ~6:50 AM, awaiting approval | Daniel E. | Metricool day: IG Reel after approval; TikTok manual — owner posts |
