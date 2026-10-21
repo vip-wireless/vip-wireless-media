@@ -6,7 +6,7 @@ live in the Google Doc "VIP Wireless – Content Brief (read me first)" (Drive f
 
 ## Services to promote
 Repairs (main focus), unlocked phones for sale, buying phones for cash, accessories,
-Ria money transfer, SIM activation.
+Ria money transfer, SIM activation, and phone financing / lease-to-own through Acima (owner, 2026-10-21).
 
 ## Hard rules
 - Nothing is published without the owner's explicit approval in chat that day.
@@ -39,12 +39,13 @@ would be exceeded, don't schedule — tell the owner and ask them to post Instag
 2. Pick today's theme from the rotation below.
 3. Make the content:
    - ALWAYS a vertical video, 1080x1920, 8–15s, built from `_kit/templates/video_template.html`
-     (DARK) or `_kit/templates/video_template_light.html` (LIGHT)
+     (DARK), `_kit/templates/video_template_light.html` (LIGHT) or
+     `_kit/templates/video_template_seasonal.html` (AUTUMN / HALLOWEEN via body class)
      (copy to `posts/YYYY-MM-DD/`, fix the logo path to `../../_kit/brand/logo_wide.jpg`,
      edit text/scenes/photos, render with `_kit/render.py video`).
    - Mix DARK and LIGHT (owner, 2026-10-16: "too much dark doesn't look good all the time").
      Check the Look column in LOG.md: never more than 2 posts in a row in the same look, and aim
-     for roughly half light. Image posts have the same pair (`image_post_template_light.html`).
+     for roughly half light; in season, rotate AUTUMN/HALLOWEEN in too (see Design variety). Image posts have the same pair (`image_post_template_light.html`).
      Keep key text inside the middle area (TikTok/Reels UI covers the bottom ~350px and right edge).
    - Optional still 1080x1350 from `_kit/templates/image_post_template.html` when a photo post fits better.
    - Captions: Instagram/Facebook caption and TikTok caption (shorter, 3–5 hashtags), local & friendly.
@@ -167,6 +168,13 @@ Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost a
 8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
 9. We buy phones: sell your old phone for cash at the store (bring it in for a quote)
 
+Financing (owner, 2026-10-21): customers can finance / lease-to-own a phone through Acima.
+Mention it in EVERY post or video about buying a phone from us (phones for sale, unlocked
+phones, new iPhones/Androids) — on screen and in the caption, e.g. "Financing available
+through Acima" / "Lease-to-own options with Acima". Keep it generic: no payment amounts,
+rates, "$0 down", "no credit check/needed" or approval promises, and no Acima logo — just
+the name in text. "Ask us about Acima" / "call 380-271-8085" is the CTA for details.
+
 Sales & buying posts: we sell new and used iPhones and Android phones (mostly Apple, Samsung,
 Motorola) and we buy unlocked phones. In posts say "iPhones & Androids" and always send
 people to call for current stock ("Call 380-271-8085 to check what's in stock today"). Never invent prices, stock, models or conditions; only name specific
@@ -180,5 +188,20 @@ Call-first rule (all posts): the goal is to get people to CALL 380-271-8085 or w
   "we buy every phone". Invite the question instead.
 - Every post's CTA leads with the phone number (call / text-friendly wording) plus "or walk in".
 
-Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background;
+## Design variety (owner, 2026-10-21)
+The owner likes the designs but plain black/white with red every day "feels all the same".
+- Use seasonal colors regularly: `_kit/templates/video_template_seasonal.html` has two looks
+  set by the body class — `autumn` (orange/amber/brown with falling leaves) and `halloween`
+  (purple night, glowing moon, flying bats, orange accents). Use HALLOWEEN for all Halloween
+  deal/countdown posts Oct 24–31 and often in late October; AUTUMN through November
+  (Thanksgiving). Later: winter/holiday colors in December, etc. — add a new body-class
+  palette to the seasonal template when a new season starts.
+- Log the look as DARK, LIGHT, AUTUMN or HALLOWEEN. Never 3 posts in a row with the same
+  look; in season, roughly every other post should be seasonal.
+- Vary the animation too: the seasonal template has pop-in / slide-in / drop-in scene entries
+  and a pulsing phone number; mix entries, zooms on photos, counters, text pops so videos
+  don't feel templated. Keep text legible (big, high contrast) and inside the safe area.
+- Keep the VIP logo (black pill) and a touch of VIP red on every post so it's still on-brand.
+
+Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety);
 Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).
