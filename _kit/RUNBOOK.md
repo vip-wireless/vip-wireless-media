@@ -26,6 +26,8 @@ are the owner's own days — make nothing, send nothing, and skip them in the ro
 | Mon, Wed, Fri, Sat | Metricool schedules it after approval | Owner posts manually |
 | Tue, Thu, Sun | No post from us (owner's day) | No post from us |
 If a run starts on Tue/Thu/Sun, stop without making or sending anything.
+**OCTOBER 2026 EXCEPTION (owner, 2026-10-21):** Oct 22–31, 2026 every day is a Metricool day
+(post daily, Tue/Thu/Sun included). From Nov 1, 2026 the table above applies again.
 Metricool Free = 20 published posts/month per brand; 4 days/week stays under it.
 Before scheduling, count this month's Metricool posts (getScheduledPosts + LOG.md); if 20
 would be exceeded, don't schedule — tell the owner and ask them to post Instagram themselves.
