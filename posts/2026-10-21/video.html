@@ -1,0 +1,77 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0a0a0b;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.38),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
+.logo{position:absolute;left:340px;top:120px;height:96px;width:400px;overflow:hidden}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
+@keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s1{animation:inout 2.6s .2s both}
+.s2{animation:inout 2.8s 2.9s both}
+.s3{animation:inout 3s 5.8s both}
+.s4{animation:inhold 3.4s 8.9s both}
+.big{font-size:150px;font-weight:900;line-height:.95;letter-spacing:-.035em}
+.red{color:#e01e2e}
+.sub{font-size:50px;color:#cfcfd4;margin-top:40px;font-weight:500;line-height:1.3}
+.tag{display:inline-block;align-self:flex-start;background:#d71928;font-weight:800;font-size:38px;letter-spacing:.1em;padding:14px 26px;border-radius:10px;text-transform:uppercase;margin-bottom:40px}
+.fine{font-size:30px;color:#85858c;margin-top:50px;line-height:1.4}
+.timer{font-size:280px;font-weight:900;letter-spacing:-.05em;color:#e01e2e;line-height:1}
+.timer small{font-size:90px;color:#fff;letter-spacing:-.02em}
+.stars{font-size:90px;color:#ffc31a;letter-spacing:.05em}
+.quote{font-size:84px;font-weight:800;line-height:1.12;margin-top:30px;letter-spacing:-.02em}
+.who{font-size:40px;color:#a9a9b0;margin-top:40px;font-weight:600}
+.g{display:inline-flex;gap:14px;align-items:center;margin-top:30px;font-size:36px;color:#cfcfd4;font-weight:600}
+.badge{width:300px;height:300px;border-radius:50%;background:#d71928;display:flex;flex-direction:column;align-items:center;justify-content:center;align-self:center;transform:rotate(-8deg);box-shadow:0 30px 80px rgba(215,25,40,.5);margin-bottom:60px}
+.badge b{font-size:92px;font-weight:900;line-height:1}
+.badge span{font-size:32px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-align:center;line-height:1.15;margin-top:8px}
+.cta{font-size:96px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.info{text-align:center;margin-top:60px;font-size:44px;line-height:1.5;color:#cfcfd4}
+.info b{display:block;font-size:76px;color:#fff;font-weight:900;margin-bottom:10px}
+.walk{text-align:center;margin-top:40px;font-size:38px;font-weight:800;color:#e01e2e;letter-spacing:.12em;text-transform:uppercase}
+svg.crack{position:absolute;right:-40px;top:-260px;width:520px;opacity:.9}
+svg.crack path{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1s .5s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:#d71928;animation:bar 12.3s linear forwards}
+@keyframes bar{from{width:0}to{width:100%}}
+
+.ph{width:920px;height:620px;border-radius:36px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);margin-bottom:50px;border:6px solid #222}
+.ph img{width:100%;height:100%;object-fit:cover;animation:zoom 3s linear both}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+.s2 .ph img{animation-delay:2.9s}.s3 .ph img{animation-delay:5.8s}
+.list{font-size:60px;font-weight:800;line-height:1.35;letter-spacing:-.02em}
+.list span{color:#e01e2e}
+.cta{font-size:88px}
+</style></head><body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="scene s1">
+  <div class="tag">Columbus · Whitehall</div>
+  <div class="big">Shopping<br>for a new<br><span class="red">phone?</span></div>
+  <div class="sub">Hey Columbus 👋 Check your local shop first.</div>
+</div>
+
+<div class="scene s2">
+  <div class="ph"><img src="../../_kit/photos/photo_06_new_iphones_in_box.jpg"></div>
+  <div class="big" style="font-size:112px">Unlocked<br><span class="red">iPhones &amp; Androids</span></div>
+  <div class="sub" style="margin-top:30px">New &amp; used — Apple, Samsung, Motorola</div>
+</div>
+
+<div class="scene s3">
+  <div class="ph"><img src="../../_kit/photos/photo_09_interior_counter.jpg"></div>
+  <div class="list">Trading up? 🔁<br><span>We buy unlocked phones too.</span></div>
+  <div class="sub" style="margin-top:30px">Bring yours in for a quote.</div>
+</div>
+
+<div class="scene s4">
+  <div class="cta">Call to check<br>what's <span class="red">in stock</span></div>
+  <div class="info"><b>380-271-8085</b>4257 E Main St, Whitehall<br>Open daily 10:30 AM – 8 PM</div>
+  <div class="walk">Or just walk in</div>
+</div>
+<div class="bar"></div>
+</body></html>
