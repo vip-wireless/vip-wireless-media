@@ -207,5 +207,24 @@ The owner likes the designs but plain black/white with red every day "feels all 
   don't feel templated. Keep text legible (big, high contrast) and inside the safe area.
 - Keep the VIP logo (black pill) and a touch of VIP red on every post so it's still on-brand.
 
+### HALLOWEEN STORY POSTS (owner, 2026-10-23) — every post Oct 24–31, 2026
+- Look HALLOWEEN on all of them (video or image): genuinely SCARY/spooky — deep purple/black night,
+  orange glow, fog, moon, bats, flicker, shadows. Spooky-fun, not gore. Keep VIP red + logo pill small.
+- Tell a tiny STORY. The first 1 second must grab attention with motion and NO talk about repairs or
+  services: start mid-scene (e.g. "3:07 AM…" on screen, phone glowing on a nightstand, lights flicker,
+  a ghost swoops in and SMASHES the screen — crack draws in + screen shake). Only after the twist
+  (~3–5s) reveal the punchline and the deal/service, then the phone-number end card.
+- Story ideas (one per day, don't repeat): ghost cracks the screen; zombie hand grabs the phone from
+  under the bed and drops it; vampire's phone at 1% at midnight ("battery's dying… like me");
+  haunted mirror cracks = phone cracks; witch's cauldron drops the phone in (water-damage tip);
+  three candles blown out one by one = "3 DAYS LEFT"; jack-o'-lantern carved face reveals "TODAY".
+- Image posts: tell the story as a 2–3 panel comic strip (setup → spooky twist → deal/CTA).
+- Deals (approved, see LOG.md 2026-10-13): Scary Screen = UP TO $50 off screen repairs Oct 24–31,
+  amount depends on model — always "up to" + "call for your model". Costume deal Oct 31 ONLY: come in
+  costume → case + screen protector for $25 (normally $40). Countdown: Sat 24 launch, Wed 28 "3 days",
+  Fri 30 "tomorrow", Sat 31 "today". Other days Oct 25–29: Halloween stories that still mention
+  Scary Screen. Keep the 15-minute fine print whenever 15 min is used.
+- Suggest a spooky TikTok sound for each (trending OK — these are Organic countdown posts).
+
 Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety);
 Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).
