@@ -230,6 +230,14 @@ The owner likes the designs but plain black/white with red every day "feels all 
   candidates and use its numeric id). Also bake spooky sound effects into the mp4 itself with ffmpeg
   (low eerie drone/wind, whoosh when the ghost flies in, glass-crack hit when the screen breaks) so the
   scare lands even without a library track. TikTok: suggest a spooky/trending Halloween sound.
+- SCENE-SYNCED SFX (owner, 2026-10-23): don't just lay one smooth spooky bed — change the sound with
+  the scene, several effects per video, each timed to what's on screen: lights flicker → flicker buzz;
+  phone vibrates → phone_buzz; ghost flies in → whoosh; screen breaks → crack + sting; tension → heartbeat;
+  storm/lightning → thunder; door/floor → creak; reveal/deal → ding; drone/wind low underneath.
+  Kit: `_kit/sfx/` (wavs synthesized by `make_sfx.py`; re-run it if missing). After rendering:
+  `python3 _kit/sfx/mix.py silent.mp4 final.mp4 drone@0:0.35 flicker@0.6 whoosh@1.4 crack@2.2:1 ...`
+  (name@seconds[:volume]). Read the scene timings from the HTML animation delays. On Instagram keep any
+  library track low (audioVolume ~15–20) so the effects stay audible; add new effects to make_sfx.py as needed.
 
 Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety);
 Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).
