@@ -224,7 +224,12 @@ The owner likes the designs but plain black/white with red every day "feels all 
   costume → case + screen protector for $25 (normally $40). Countdown: Sat 24 launch, Wed 28 "3 days",
   Fri 30 "tomorrow", Sat 31 "today". Other days Oct 25–29: Halloween stories that still mention
   Scary Screen. Keep the 15-minute fine print whenever 15 min is used.
-- Suggest a spooky TikTok sound for each (trending OK — these are Organic countdown posts).
+- SOUND (owner, 2026-10-23): Halloween posts must use SPOOKY / ghostly background sound — NOT the
+  usual 'Make It' track. Instagram via Metricool audioConfiguration: search terms like "Halloween",
+  "spooky", "horror", "haunted", "creepy" (if several match, pick a clearly spooky instrumental from the
+  candidates and use its numeric id). Also bake spooky sound effects into the mp4 itself with ffmpeg
+  (low eerie drone/wind, whoosh when the ghost flies in, glass-crack hit when the screen breaks) so the
+  scare lands even without a library track. TikTok: suggest a spooky/trending Halloween sound.
 
 Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety);
 Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).
