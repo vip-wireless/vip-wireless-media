@@ -38,7 +38,11 @@ would be exceeded, don't schedule — tell the owner and ask them to post Instag
    added (prefer new real media when present).
 2. Pick today's theme from the rotation below.
 3. Make the content:
-   - ALWAYS a vertical video, 1080x1920, 8–15s, built from `_kit/templates/video_template.html`
+   - Owner (2026-10-23): a video is NOT needed every day — mix in image-only posts (1080x1350, bold
+     text + a real photo) regularly. Make posts interesting (strong hook, stickers, cards), not templated.
+     `photo_07_repair_in_progress.jpg` shows the BACK of a screen part — never use it as a
+     "broken screen"/repair hero shot; use `photo_03_before_after_cracked_iphone.jpg` or owner photos.
+   - Video posts: vertical video, 1080x1920, 8–15s, built from `_kit/templates/video_template.html`
      (DARK), `_kit/templates/video_template_light.html` (LIGHT) or
      `_kit/templates/video_template_seasonal.html` (AUTUMN / HALLOWEEN via body class)
      (copy to `posts/YYYY-MM-DD/`, fix the logo path to `../../_kit/brand/logo_wide.jpg`,
