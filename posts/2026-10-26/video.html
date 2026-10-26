@@ -1,0 +1,123 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+body{--acc:#ff7a1a;--red:#d71928;--soft:#e7d8f2;background:linear-gradient(170deg,#06030b 0%,#1c0a2b 55%,#3a1450 100%);color:#fff}
+.sky{position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(255,122,26,.14),transparent 60%)}
+.moon{position:absolute;right:-70px;top:470px;opacity:.7;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fff6d8,#f3c86b 70%);box-shadow:0 0 120px 30px rgba(243,200,107,.3);animation:rise 13s linear both}
+@keyframes rise{from{transform:translateY(80px)}to{transform:translateY(-40px)}}
+.fog{position:absolute;left:-300px;right:-300px;bottom:0;height:700px;background:radial-gradient(ellipse at 30% 80%,rgba(200,180,230,.22),transparent 60%),radial-gradient(ellipse at 75% 90%,rgba(200,180,230,.18),transparent 55%);animation:drift 13s linear both;z-index:2}
+@keyframes drift{to{transform:translateX(220px)}}
+.fx{position:absolute;inset:0;pointer-events:none;z-index:1}
+.bat{position:absolute;width:120px;animation:fly linear infinite;filter:drop-shadow(0 0 10px rgba(255,122,26,.5))}
+.bat svg{width:100%;animation:flap .35s ease-in-out infinite alternate}
+@keyframes fly{from{transform:translate(-200px,0)}to{transform:translate(1300px,-260px)}}
+@keyframes flap{to{transform:scaleY(.45)}}
+.logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.35);z-index:8}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+
+/* scene 1: haunted mirror */
+.s1{position:absolute;inset:0;z-index:3;animation:s1out 3.6s both}
+@keyframes s1out{0%,90%{opacity:1}100%{opacity:0}}
+.clock{position:absolute;left:0;right:0;top:300px;text-align:center;font-size:170px;font-weight:900;letter-spacing:-.03em;color:#ff4d3a;text-shadow:0 0 40px rgba(255,60,40,.7);animation:pulse 1.2s ease-in-out infinite alternate}
+.clock small{display:block;font-size:38px;font-weight:600;color:var(--soft);letter-spacing:.12em;text-shadow:none;margin-top:6px}
+@keyframes pulse{to{opacity:.6}}
+.mirror{position:absolute;left:190px;top:600px;width:700px;height:780px;border-radius:350px 350px 30px 30px;border:22px solid #4a2a5e;box-shadow:0 0 0 6px #2a1636,0 0 90px rgba(170,120,255,.35);background:linear-gradient(170deg,#2b2440,#120c1d);overflow:hidden}
+.mirror .glint{position:absolute;left:80px;top:60px;width:120px;height:500px;background:linear-gradient(rgba(255,255,255,.18),transparent);transform:rotate(18deg)}
+.face{position:absolute;left:190px;top:170px;width:280px;opacity:0;animation:face 2.4s .5s both;filter:drop-shadow(0 0 30px rgba(220,230,255,.7))}
+@keyframes face{0%{opacity:0;transform:scale(.7)}20%{opacity:.25}30%{opacity:0}45%{opacity:.6}52%{opacity:.1}70%{opacity:.95;transform:scale(1.15)}100%{opacity:.9;transform:scale(1.35)}}
+.mcrack{position:absolute;inset:0}
+.mcrack path{stroke:#e9e3ff;stroke-width:6;fill:none;stroke-dasharray:900;stroke-dashoffset:900;animation:draw .35s ease-out 2.3s forwards;filter:drop-shadow(0 0 6px #fff)}
+.sink{position:absolute;left:110px;right:110px;top:1400px;height:90px;background:linear-gradient(#e8e2f0,#9d93b0);border-radius:20px 20px 60px 60px;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+.counter{position:absolute;left:0;right:0;top:1470px;bottom:0;background:linear-gradient(#1a0b26,#0b0512)}
+.phone{position:absolute;left:640px;top:1180px;width:180px;height:300px;border-radius:30px;background:#0b0b10;border:7px solid #2b2b33;overflow:hidden;box-shadow:0 0 100px 24px rgba(140,180,255,.35);z-index:4;animation:buzz .08s linear .3s 6 alternate,shake .07s linear 2.3s 8 alternate}
+@keyframes buzz{from{transform:translateX(-6px) rotate(-1.5deg)}to{transform:translateX(6px) rotate(1.5deg)}}
+@keyframes shake{from{margin-left:-6px}to{margin-left:6px}}
+.scr{position:absolute;inset:0;background:linear-gradient(160deg,#9cc1ff,#4b6fd6);display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:800;color:#fff;font-size:22px;text-align:center}
+.scr .t{font-size:46px;font-weight:900}
+.crack{position:absolute;inset:0;z-index:2}
+.crack path{stroke:#fff;stroke-width:5;fill:none;stroke-dasharray:700;stroke-dashoffset:700;animation:draw .35s ease-out 2.35s forwards;filter:drop-shadow(0 0 4px #000)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.shatter{position:absolute;inset:0;animation:dim .4s 2.4s forwards}
+@keyframes dim{to{background:rgba(10,10,20,.45)}}
+body .wrap{animation:bigshake .06s linear 2.3s 10 alternate}
+@keyframes bigshake{from{transform:translate(-14px,6px)}to{transform:translate(14px,-6px)}}
+.boo{position:absolute;left:0;right:0;top:1600px;text-align:center;font-size:130px;font-weight:900;color:var(--acc);text-shadow:0 0 50px rgba(255,122,26,.8);opacity:0;animation:boo .9s 2.35s both;z-index:6}
+@keyframes boo{0%{opacity:0;transform:scale(.4)}30%{opacity:1;transform:scale(1.15)}60%{transform:scale(1)}100%{opacity:1}}
+.dark{position:absolute;inset:0;background:#000;z-index:7;opacity:0;animation:flick 3.4s linear both;pointer-events:none}
+@keyframes flick{0%,8%{opacity:0}9%{opacity:.8}7%{opacity:.1}12%{opacity:.7}14%{opacity:0}66%{opacity:0}67%{opacity:.85}79%{opacity:.1}100%{opacity:0}}
+@keyframes slidein{0%{opacity:0;transform:translateX(-700px) skewX(10deg)}10%{opacity:1;transform:translateX(30px)}15%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateX(700px)}}
+/* text scenes */
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0;z-index:5}
+@keyframes popin{0%{opacity:0;transform:scale(.6) rotate(-6deg)}10%{opacity:1;transform:scale(1.04) rotate(1deg)}16%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:scale(1.1)}}
+@keyframes dropin{0%{opacity:0;transform:translateY(-500px)}9%{opacity:1;transform:translateY(20px)}14%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(60px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.9)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s2{animation:slidein 2.8s 3.5s both}
+.s3{animation:popin 3.4s 6.3s both}
+.s4{animation:inhold 3.4s 9.6s both}
+.big{font-size:140px;font-weight:900;line-height:.95;letter-spacing:-.035em;text-shadow:0 8px 30px rgba(0,0,0,.4)}
+.acc{color:var(--acc)}.red{color:var(--red)}
+.sub{font-size:52px;color:var(--soft);margin-top:40px;font-weight:600;line-height:1.3}
+.tag{display:inline-block;align-self:flex-start;background:var(--acc);color:#120818;font-weight:900;font-size:40px;letter-spacing:.1em;padding:14px 26px;border-radius:10px;text-transform:uppercase;margin-bottom:40px}
+.tag.red{background:var(--red);color:#fff}
+.fine{font-size:30px;color:var(--soft);opacity:.8;margin-top:50px;line-height:1.4}
+.deal{font-size:200px;font-weight:900;line-height:.9;letter-spacing:-.04em;color:var(--acc);text-shadow:0 0 60px rgba(255,122,26,.6)}
+.deal small{display:block;font-size:70px;color:#fff;letter-spacing:-.02em;margin-top:10px}
+.cta{font-size:96px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.info{text-align:center;margin-top:60px;font-size:44px;line-height:1.5;color:var(--soft)}
+.info b{display:block;font-size:84px;color:#fff;font-weight:900;margin-bottom:10px;animation:pulsebig 1s ease-in-out 10.1s 3 alternate}
+@keyframes pulsebig{to{transform:scale(1.07);color:var(--acc)}}
+.walk{text-align:center;margin-top:40px;font-size:38px;font-weight:800;color:var(--acc);letter-spacing:.12em;text-transform:uppercase}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:var(--red);animation:bar 13s linear forwards;z-index:9}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="wrap" style="position:absolute;inset:0">
+<div class="sky"></div><div class="moon"></div>
+<div class="fx" id="fx"></div>
+<div class="fog"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="s1">
+  <div class="clock">3:33 AM<small>DON'T LOOK IN THE MIRROR</small></div>
+  <div class="mirror"><div class="glint"></div>
+    <svg class="face" viewBox="0 0 280 360"><ellipse cx="140" cy="170" rx="120" ry="160" fill="#e8ecff" opacity=".85"/><ellipse cx="95" cy="150" rx="28" ry="40" fill="#0a0612"/><ellipse cx="185" cy="150" rx="28" ry="40" fill="#0a0612"/><ellipse cx="140" cy="255" rx="30" ry="48" fill="#0a0612"/></svg>
+    <svg class="mcrack" viewBox="0 0 700 780"><path d="M330 330 L250 120 L270 0"/><path d="M330 330 L560 220 L700 240"/><path d="M330 330 L520 560 L560 780"/><path d="M330 330 L120 450 L0 470"/><path d="M330 330 L170 230 L60 120"/><path d="M330 330 L300 600 L240 780"/><path d="M250 120 L150 90 M520 560 L660 600 M120 450 L90 640 M560 220 L600 80"/></svg>
+  </div>
+  <div class="counter"></div><div class="sink"></div>
+  <div class="phone">
+    <div class="scr"><div class="t">3:33</div>📱 1 new message<br>"look up"</div>
+    <div class="shatter"></div>
+    <svg class="crack" viewBox="0 0 180 300"><path d="M100 120 L70 30 L80 0"/><path d="M100 120 L170 80 L180 60"/><path d="M100 120 L150 230 L165 300"/><path d="M100 120 L30 180 L0 200"/><path d="M100 120 L50 80 L10 50"/><path d="M100 120 L90 240 L65 300"/></svg>
+  </div>
+  <div class="boo">CRACK.</div>
+</div>
+<div class="dark"></div>
+
+<div class="scene s2">
+  <div class="tag">Columbus · Whitehall</div>
+  <div class="big">The mirror<br>cracked…<br>so did your <span class="acc">phone.</span> 👻</div>
+  <div class="sub">Bad luck? Nah. We fix cracked screens.</div>
+</div>
+
+<div class="scene s3">
+  <div class="tag red">🎃 Scary Screen deal</div>
+  <div class="deal">UP TO<br>$50 OFF<small>screen repairs</small></div>
+  <div class="sub">Oct 24–31 only · amount depends on your model — call for yours.</div>
+  <div class="fine">Most iPhone screens in about 15 min. Back glass &amp; other repairs may take longer and depend on parts availability.</div>
+</div>
+
+<div class="scene s4">
+  <div class="cta">Break the<br><span class="acc">curse today</span></div>
+  <div class="info"><b>380-271-8085</b>4257 E Main St, Whitehall<br>Open daily 10:30 AM – 8 PM</div>
+  <div class="walk">Walk-ins welcome</div>
+</div>
+<div class="bar"></div>
+</div>
+<script>
+const fx=document.getElementById('fx');
+const bat=`<svg viewBox="0 0 120 50"><path d="M60 18 C55 8 50 10 48 16 C40 6 22 4 4 12 C16 16 22 24 22 34 C30 28 40 30 46 38 C50 30 56 30 60 36 C64 30 70 30 74 38 C80 30 90 28 98 34 C98 24 104 16 116 12 C98 4 80 6 72 16 C70 10 65 8 60 18Z" fill="#120818"/></svg>`;
+for(let i=0;i<6;i++){const d=document.createElement('div');d.className='bat';const dur=5+(i%3)*1.5;
+d.style.cssText=`top:${380+i*230}px;width:${130+(i%3)*40}px;animation-duration:${dur}s;animation-delay:${-(i*1.3)}s`;d.innerHTML=bat;fx.appendChild(d);}
+</script>
+</body></html>
