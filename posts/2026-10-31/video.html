@@ -1,0 +1,126 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+body{--acc:#ff7a1a;--red:#d71928;--soft:#e7d8f2;background:linear-gradient(170deg,#06030b 0%,#1c0a2b 55%,#3a1450 100%);color:#fff}
+.sky{position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(255,122,26,.14),transparent 60%)}
+.moon{position:absolute;right:-70px;top:470px;opacity:.7;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fff6d8,#f3c86b 70%);box-shadow:0 0 120px 30px rgba(243,200,107,.3);animation:rise 13s linear both}
+@keyframes rise{from{transform:translateY(80px)}to{transform:translateY(-40px)}}
+.fog{position:absolute;left:-300px;right:-300px;bottom:0;height:700px;background:radial-gradient(ellipse at 30% 80%,rgba(200,180,230,.22),transparent 60%),radial-gradient(ellipse at 75% 90%,rgba(200,180,230,.18),transparent 55%);animation:drift 13s linear both;z-index:2}
+@keyframes drift{to{transform:translateX(220px)}}
+.fx{position:absolute;inset:0;pointer-events:none;z-index:1}
+.bat{position:absolute;width:120px;animation:fly linear infinite;filter:drop-shadow(0 0 10px rgba(255,122,26,.5))}
+.bat svg{width:100%;animation:flap .35s ease-in-out infinite alternate}
+@keyframes fly{from{transform:translate(-200px,0)}to{transform:translate(1300px,-260px)}}
+@keyframes flap{to{transform:scaleY(.45)}}
+.logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.35);z-index:8}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+
+
+
+/* scene 1: jack-o'-lantern carves itself */
+.s1{position:absolute;inset:0;z-index:3;animation:s1out 4.6s both}
+@keyframes s1out{0%,92%{opacity:1}100%{opacity:0}}
+.clock{position:absolute;left:0;right:0;top:300px;text-align:center;font-size:150px;font-weight:900;letter-spacing:-.03em;color:#ff9a3c;text-shadow:0 0 40px rgba(255,122,26,.7);animation:pulse 1.2s ease-in-out infinite alternate}
+.clock small{display:block;font-size:38px;font-weight:600;color:var(--soft);letter-spacing:.12em;text-shadow:none;margin-top:6px}
+@keyframes pulse{to{opacity:.6}}
+.whisper{position:absolute;left:0;right:0;top:600px;text-align:center;font-size:58px;font-weight:800;font-style:italic;color:#ffd7a8;opacity:0;animation:gt 1.5s .2s both}
+@keyframes gt{0%{opacity:0}30%{opacity:.95}80%{opacity:.95}100%{opacity:0}}
+.pk{position:absolute;left:190px;top:820px;width:700px;height:600px;animation:pkshake .07s linear 2.3s 6 alternate}
+@keyframes pkshake{from{transform:translate(-8px,4px) rotate(-1deg)}to{transform:translate(8px,-4px) rotate(1deg)}}
+.body{position:absolute;inset:60px 0 0 0;border-radius:48% 48% 44% 44%;background:radial-gradient(circle at 40% 35%,#ffae4d,#e8650c 55%,#8a3204 100%);box-shadow:0 0 90px rgba(255,122,26,.45),inset -30px -30px 60px rgba(0,0,0,.35)}
+.rib{position:absolute;top:60px;bottom:0;width:4px;background:rgba(120,40,0,.45);border-radius:50%}
+.stem{position:absolute;left:320px;top:0;width:60px;height:110px;background:#3f5a1d;border-radius:14px 14px 4px 4px;transform:rotate(8deg)}
+.cut{position:absolute;background:#1a0800;opacity:0;box-shadow:inset 0 0 0 0 #ffd34d}
+.eye{width:140px;height:120px;top:250px;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.e1{left:150px;animation:carve .25s .9s both,glow 3s 2.3s both}.e2{left:410px;animation:carve .25s 1.3s both,glow 3s 2.3s both}
+.nose{left:315px;top:400px;width:70px;height:60px;clip-path:polygon(50% 0,100% 100%,0 100%);animation:carve .2s 1.7s both,glow 3s 2.3s both}
+.mouth{left:130px;top:480px;width:440px;height:110px;clip-path:polygon(0 0,12% 40%,24% 0,36% 40%,50% 0,64% 40%,76% 0,88% 40%,100% 0,90% 100%,10% 100%);animation:carve .3s 2.0s both,glow 3s 2.3s both}
+@keyframes carve{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+@keyframes glow{0%{background:#1a0800}10%{background:#ffe27a;box-shadow:0 0 80px #ffd34d}30%{background:#ffb347}100%{background:#ffd34d}}
+.flare{position:absolute;left:0;right:0;top:700px;height:900px;background:radial-gradient(circle at 50% 50%,rgba(255,200,80,.55),transparent 60%);opacity:0;animation:flare 2s 2.3s both}
+@keyframes flare{0%{opacity:0}10%{opacity:1}100%{opacity:.4}}
+.black{position:absolute;inset:0;background:#000;opacity:0;animation:blk 2s 2.75s both;z-index:4}
+@keyframes blk{0%{opacity:0}15%{opacity:1}100%{opacity:1}}
+.reveal{position:absolute;left:0;right:0;top:600px;text-align:center;z-index:5;opacity:0;animation:rev 1.6s 3.05s both}
+@keyframes rev{0%{opacity:0;transform:scale(.3)}12%{opacity:1;transform:scale(1.2)}20%{transform:scale(.97)}30%{transform:none}100%{opacity:1}}
+.reveal .d{font-size:215px;font-weight:900;line-height:.85;letter-spacing:-.05em;color:#ff9a3c;text-shadow:0 0 80px rgba(255,154,60,.9)}
+.reveal .l{font-size:96px;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.05;margin-top:30px}
+.reveal .w{font-size:46px;font-weight:700;color:var(--soft);margin-top:30px;letter-spacing:.06em}
+body .wrap{animation:bigshake .06s linear 3.05s 8 alternate}
+@keyframes bigshake{from{transform:translate(-12px,6px)}to{transform:translate(12px,-6px)}}
+.dark{position:absolute;inset:0;background:#000;z-index:7;opacity:0;animation:flick 4.4s linear both;pointer-events:none}
+@keyframes flick{0%,6%{opacity:0}7%{opacity:.6}8%{opacity:0}10%{opacity:.5}12%{opacity:0}100%{opacity:0}}
+@keyframes slidein{0%{opacity:0;transform:translateX(-700px) skewX(10deg)}10%{opacity:1;transform:translateX(30px)}15%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateX(700px)}}
+/* text scenes */
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0;z-index:5}
+@keyframes popin{0%{opacity:0;transform:scale(.6) rotate(-6deg)}10%{opacity:1;transform:scale(1.04) rotate(1deg)}16%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:scale(1.1)}}
+@keyframes dropin{0%{opacity:0;transform:translateY(-500px)}9%{opacity:1;transform:translateY(20px)}14%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(60px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.9)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s2{animation:dropin 2.9s 4.5s both}
+.s3{animation:popin 3.4s 7.3s both}
+.s4{animation:inhold 3.6s 10.6s both}
+.big{font-size:140px;font-weight:900;line-height:.95;letter-spacing:-.035em;text-shadow:0 8px 30px rgba(0,0,0,.4)}
+.acc{color:var(--acc)}.red{color:var(--red)}
+.sub{font-size:52px;color:var(--soft);margin-top:40px;font-weight:600;line-height:1.3}
+.tag{display:inline-block;align-self:flex-start;background:var(--acc);color:#120818;font-weight:900;font-size:40px;letter-spacing:.1em;padding:14px 26px;border-radius:10px;text-transform:uppercase;margin-bottom:40px}
+.tag.red{background:var(--red);color:#fff}
+.fine{font-size:30px;color:var(--soft);opacity:.8;margin-top:50px;line-height:1.4}
+.deal{font-size:200px;font-weight:900;line-height:.9;letter-spacing:-.04em;color:var(--acc);text-shadow:0 0 60px rgba(255,122,26,.6)}
+.deal small{display:block;font-size:70px;color:#fff;letter-spacing:-.02em;margin-top:10px}
+.cta{font-size:96px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.info{text-align:center;margin-top:60px;font-size:44px;line-height:1.5;color:var(--soft)}
+.info b{display:block;font-size:84px;color:#fff;font-weight:900;margin-bottom:10px;animation:pulsebig 1s ease-in-out 11.1s 3 alternate}
+@keyframes pulsebig{to{transform:scale(1.07);color:var(--acc)}}
+.walk{text-align:center;margin-top:40px;font-size:38px;font-weight:800;color:var(--acc);letter-spacing:.12em;text-transform:uppercase}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:var(--red);animation:bar 14s linear forwards;z-index:9}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="wrap" style="position:absolute;inset:0">
+<div class="sky"></div><div class="moon"></div>
+<div class="fx" id="fx"></div>
+<div class="fog"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="s1">
+  <div class="clock">11:59 PM<small>OCTOBER 30…</small></div>
+  <div class="whisper">“something is carving itself…” 🔪</div>
+  <div class="flare"></div>
+  <div class="pk">
+    <div class="stem"></div><div class="body"></div>
+    <div class="rib" style="left:230px"></div><div class="rib" style="left:350px"></div><div class="rib" style="left:470px"></div>
+    <div class="cut eye e1"></div><div class="cut eye e2"></div><div class="cut nose"></div><div class="cut mouth"></div>
+  </div>
+  <div class="black"></div>
+  <div class="reveal"><div class="d">TODAY.</div><div class="l">It's Halloween. 🎃<br>Last day.</div><div class="w">TWO TREATS. TODAY ONLY…</div></div>
+</div>
+<div class="dark"></div>
+
+<div class="scene s2">
+  <div class="tag">👻 Costume deal · today only</div>
+  <div class="big" style="font-size:120px">Come in<br><span class="acc">costume</span> 🎃</div>
+  <div class="deal" style="font-size:128px;margin-top:40px">CASE +<br>PROTECTOR<small>for $25 <span style="color:var(--soft);font-size:56px">(normally $40)</span></small></div>
+</div>
+
+<div class="scene s3">
+  <div class="tag red">🎃 Scary Screen · last day</div>
+  <div class="deal">UP TO<br>$50 OFF<small>screen repairs</small></div>
+  <div class="sub">Ends tonight · amount depends on your model — call for yours.</div>
+  <div class="fine">Most iPhone screens in about 15 min. Back glass &amp; other repairs may take longer and depend on parts availability.</div>
+</div>
+
+<div class="scene s4">
+  <div class="cta">Not sure what's wrong?<br><span class="acc">We'll take a look.</span></div>
+  <div class="info"><b>380-271-8085</b>4257 E Main St, Whitehall<br>Open today 10:30 AM – 8 PM</div>
+  <div class="walk">Call or walk in</div>
+</div>
+<div class="bar"></div>
+</div>
+<script>
+const fx=document.getElementById('fx');
+const bat=`<svg viewBox="0 0 120 50"><path d="M60 18 C55 8 50 10 48 16 C40 6 22 4 4 12 C16 16 22 24 22 34 C30 28 40 30 46 38 C50 30 56 30 60 36 C64 30 70 30 74 38 C80 30 90 28 98 34 C98 24 104 16 116 12 C98 4 80 6 72 16 C70 10 65 8 60 18Z" fill="#120818"/></svg>`;
+for(let i=0;i<6;i++){const d=document.createElement('div');d.className='bat';const dur=5+(i%3)*1.5;
+d.style.cssText=`top:${380+i*230}px;width:${130+(i%3)*40}px;animation-duration:${dur}s;animation-delay:${-(i*1.3)}s`;d.innerHTML=bat;fx.appendChild(d);}
+</script>
+</body></html>
