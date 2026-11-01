@@ -33,3 +33,4 @@
 | 2026-11-01 | DEAL APPROVED (owner, Nov 1): FREE PHONE when a customer pays 3 months of bill in advance with a new activation. Ongoing until owner ends it. Added as theme 10 in RUNBOOK. Carrier/eligible phones/end date not given — don't state them. | — | deal |
 | 2026-11-01 | FREE PHONE offer details (owner): never name carrier or models (they change); goal = more calls; visuals = three budget Androids together (Galaxy A16 / Moto G 5G / Moto G Play style), no model names. | — | deal |
 | 2026-11-01 | Owner OK'd online product photos for the free phone offer (Galaxy A16 / Moto G 5G / Moto G Play style); save to _kit/photos/offer_phones/ and reuse. | — | rule |
+| 2026-11-01 | FREE PHONE hero image created (AI-generated, three budget Androids, no logos/text): _kit/photos/offer_phones/free_phone_hero.png (+ _alt). Use it for every free phone offer post. | — | asset |

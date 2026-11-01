@@ -196,12 +196,12 @@ CTA "Call 380-271-8085 to claim yours" / "Call or walk in today". Don't combine 
 Acima wording in the same headline (the free phone isn't financed).
 Visuals: show THREE budget Android phones together (the kind usually on the offer — Galaxy
 A16-style, Moto G 5G / Moto G Play-style) so no single model is the focus. Never write model
-names on screen or in captions. Owner (2026-11-01): product photos of these phones from
-online are OK to use (owner has none in Drive). Use clean product shots (official
-Samsung/Motorola product images preferred) — not other stores' photos, nothing watermarked,
-no prices or carrier branding visible. Download them once into `_kit/photos/offer_phones/`
-and reuse them; if the owner later adds real photos to Drive folders 1–3, use those instead.
-If images can't be fetched in a run, fall back to clean generic phone mockups.
+names on screen or in captions. Owner (2026-11-01): use the ready-made hero image EVERY time —
+`_kit/photos/offer_phones/free_phone_hero.png` (1080x1350; three budget Androids on a white
+podium, light-blue background, empty top third for the headline). Backup/variety:
+`free_phone_hero_alt.png`. For 1080x1920 videos, place it centered and extend the background
+above/below. Don't regenerate or download other phone photos unless the owner asks; if the
+owner adds real photos of the offer phones to Drive folders 1–3, those may be used too.
 
 Financing (owner, 2026-10-21): customers can finance / lease-to-own a phone through Acima.
 Mention it in EVERY post or video about buying a phone from us (phones for sale, unlocked
