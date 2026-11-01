@@ -188,10 +188,17 @@ Free phone offer (owner, 2026-11-01, ongoing until the owner says it ends): cust
 start a NEW ACTIVATION and pay 3 MONTHS of their bill in advance get a FREE PHONE.
 Feature it regularly (about once a week, Boost-ready) and mention it in SIM-activation and
 phones-for-sale posts. Wording: "Get a FREE phone when you pay 3 months in advance on a new
-activation" / "New activation + 3 months paid = FREE phone". Say only what the owner gave:
-no carrier name, phone models, plan prices, dollar values or end date unless the owner
-confirms them in chat; CTA "Call 380-271-8085 or walk in for details". Don't combine it with
+activation" / "New activation + 3 months paid = FREE phone". Say only what the owner gave.
+Owner (2026-11-01): NEVER name the carrier or the phone models (they change week to week) —
+no plan prices, dollar values or end date either. The goal is PHONE CALLS: make it Boost-ready,
+big "FREE PHONE" hook, phone number large on screen and in the first line of the caption,
+CTA "Call 380-271-8085 to claim yours" / "Call or walk in today". Don't combine it with
 Acima wording in the same headline (the free phone isn't financed).
+Visuals: show THREE budget Android phones together (the kind usually on the offer — Galaxy
+A16-style, Moto G 5G / Moto G Play-style) so no single model is the focus. Never write model
+names on screen or in captions. Prefer the owner's own photos of the offer phones (Drive
+folders 1–3); otherwise draw clean, generic phone mockups in the template (no brand logos,
+no manufacturer marketing images copied from the web).
 
 Financing (owner, 2026-10-21): customers can finance / lease-to-own a phone through Acima.
 Mention it in EVERY post or video about buying a phone from us (phones for sale, unlocked
