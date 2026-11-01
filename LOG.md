@@ -34,3 +34,4 @@
 | 2026-11-01 | FREE PHONE offer details (owner): never name carrier or models (they change); goal = more calls; visuals = three budget Androids together (Galaxy A16 / Moto G 5G / Moto G Play style), no model names. | — | deal |
 | 2026-11-01 | Owner OK'd online product photos for the free phone offer (Galaxy A16 / Moto G 5G / Moto G Play style); save to _kit/photos/offer_phones/ and reuse. | — | rule |
 | 2026-11-01 | FREE PHONE hero image created (AI-generated, three budget Androids, no logos/text): _kit/photos/offer_phones/free_phone_hero.png (+ _alt). Use it for every free phone offer post. | — | asset |
+| 2026-11-01 | Free phone offer: transparent cutouts added (_kit/photos/offer_phones/free_phone_cutout*.png); owner OK'd any background. | — | asset |

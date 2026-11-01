@@ -200,7 +200,11 @@ names on screen or in captions. Owner (2026-11-01): use the ready-made hero imag
 `_kit/photos/offer_phones/free_phone_hero.png` (1080x1350; three budget Androids on a white
 podium, light-blue background, empty top third for the headline). Backup/variety:
 `free_phone_hero_alt.png`. For 1080x1920 videos, place it centered and extend the background
-above/below. Don't regenerate or download other phone photos unless the owner asks; if the
+above/below. Transparent cutouts (owner OK'd removing the background and using any
+background that fits the post): `free_phone_cutout.png` (three phones, no podium),
+`free_phone_cutout_alt.png`, `free_phone_cutout_podium.png` (with the white podium) — put them
+on any brand/LIGHT/DARK/seasonal background, add glow, shadow, confetti, a "FREE" badge, etc.
+Don't regenerate or download other phone photos unless the owner asks; if the
 owner adds real photos of the offer phones to Drive folders 1–3, those may be used too.
 
 Financing (owner, 2026-10-21): customers can finance / lease-to-own a phone through Acima.
