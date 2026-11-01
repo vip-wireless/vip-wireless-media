@@ -19,17 +19,29 @@ Ria money transfer, SIM activation, and phone financing / lease-to-own through A
 - Prefer the store's own photos/videos (Drive folders 1–3, `_kit/photos`) over stock.
 
 ## Weekly split (America/New_York)
-Owner's instruction (2026-11-01): posts are made ONLY on Metricool days Mon, Tue, Thu, Fri.
-Wed, Sat and Sun are the owner's own days — make nothing, send nothing, and skip them in the rotation.
+Owner's instruction (2026-11-01): posts are made Mon–Fri (Mon, Tue, Wed, Thu, Fri).
+Sat and Sun are the owner's own days — make nothing, send nothing, and skip them in the rotation.
 | Day | Instagram (+Facebook auto-share) | TikTok |
 |---|---|---|
-| Mon, Tue, Thu, Fri | Metricool schedules it after approval | Owner posts manually |
-| Wed, Sat, Sun | No post from us (owner's day) | No post from us |
-If a run starts on Wed/Sat/Sun, stop without making or sending anything.
-(History: Mon/Wed/Fri/Sat from 2026-10-16; every day Oct 22–31, 2026; Mon/Tue/Thu/Fri from 2026-11-01.)
-Metricool Free = 20 published posts/month per brand; 4 days/week stays under it.
-Before scheduling, count this month's Metricool posts (getScheduledPosts + LOG.md); if 20
-would be exceeded, don't schedule — tell the owner and ask them to post Instagram themselves.
+| Mon–Fri | Metricool schedules it after approval (unless the monthly limit is reached, see below) | Owner posts manually |
+| Sat, Sun | No post from us (owner's day) | No post from us |
+If a run starts on Sat/Sun, stop without making or sending anything.
+(History: Mon/Wed/Fri/Sat from 2026-10-16; every day Oct 22–31, 2026; Mon–Fri from 2026-11-01.)
+
+## Metricool monthly limit (owner, 2026-11-01)
+Metricool Free = 20 published posts per calendar month per brand. Mon–Fri is ~21–23 posts a
+month, so the limit is usually reached near the end of the month.
+Before sending the draft, count this month's Metricool posts (getScheduledPosts + LOG.md).
+If 20 are already used: STILL make the post and send it to the owner as usual, but open the
+message with, in bold on its own line: "⚠️ Metricool has reached its 20-post limit for this
+month — please post this one to Instagram yourself (and TikTok as usual)." Do not schedule it
+in Metricool, even after approval. Log it as "Metricool limit reached — owner posts IG + TikTok".
+
+## Format rotation: video one day, image the next (owner, 2026-11-01)
+Alternate strictly: check the last post in LOG.md — if it was a video, today is an IMAGE post
+(1080x1350); if it was an image, today is a VIDEO (1080x1920). Log the format in each LOG.md
+entry ("Format: VIDEO" or "Format: IMAGE"). On image days send only the image (the owner can
+post it to TikTok as a photo post).
 
 ## Steps each morning
 1. Read the brief doc, `LOG.md` (what's been posted — don't repeat a topic within 7 days or
@@ -37,8 +49,8 @@ would be exceeded, don't schedule — tell the owner and ask them to post Instag
    added (prefer new real media when present).
 2. Pick today's theme from the rotation below.
 3. Make the content:
-   - Owner (2026-10-23): a video is NOT needed every day — mix in image-only posts (1080x1350, bold
-     text + a real photo) regularly. Make posts interesting (strong hook, stickers, cards), not templated.
+   - Video or image per the Format rotation above (image posts: 1080x1350, bold
+     text + a real photo). Make posts interesting (strong hook, stickers, cards), not templated.
      `photo_07_repair_in_progress.jpg` shows the BACK of a screen part — never use it as a
      "broken screen"/repair hero shot; use `photo_03_before_after_cracked_iphone.jpg` or owner photos.
    - Video posts: vertical video, 1080x1920, 8–15s, built from `_kit/templates/video_template.html`
@@ -50,12 +62,12 @@ would be exceeded, don't schedule — tell the owner and ask them to post Instag
      Check the Look column in LOG.md: never more than 2 posts in a row in the same look, and aim
      for roughly half light; in season, rotate AUTUMN/HALLOWEEN in too (see Design variety). Image posts have the same pair (`image_post_template_light.html`).
      Keep key text inside the middle area (TikTok/Reels UI covers the bottom ~350px and right edge).
-   - Optional still 1080x1350 from `_kit/templates/image_post_template.html` when a photo post fits better.
+   - Image posts: 1080x1350 from `_kit/templates/image_post_template.html` (DARK) or `image_post_template_light.html` (LIGHT).
    - Captions: Instagram/Facebook caption and TikTok caption (shorter, 3–5 hashtags), local & friendly.
    - Look at a few rendered frames before sending; fix anything clipped or off-brand.
-4. Save `posts/YYYY-MM-DD/` (video, optional image, captions.txt), commit as
+4. Save `posts/YYYY-MM-DD/` (today's video or image, captions.txt), commit as
    "VIP Wireless Bot <bot@vip-wireless.invalid>", push to main.
-5. Send the owner (proactive, so it reaches the phone): the video + image files and a short
+5. Send the owner (proactive, so it reaches the phone): today's video or image file and a short
    message with both captions and "Reply 'approved' or tell me what to change."
    Open the message with the day's posting plan, in bold, on its own line:
    "✅ Metricool posts this to Instagram at 11 AM after you approve (15 min after approval if

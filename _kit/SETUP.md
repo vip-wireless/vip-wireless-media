@@ -30,9 +30,9 @@ operator must delete their copies so posts and reminders aren't doubled.
 Show the two tasks (A and C) in a short table (name, schedule, what it does) and ask once:
 "Create these two scheduled tasks?" On yes, create each with the exact name, schedule
 (timezone America/New_York) and prompt from `_kit/HANDOVER.md` section 2:
-- A. VIP Wireless daily post — `CRON_TZ=America/New_York 45 6 * * 1,2,4,5`
-- (B. posting check-in is retired — owner makes no posts on Wed/Sat/Sun; skip it)
-- C. VIP Wireless TikTok check-in — `CRON_TZ=America/New_York 0 11 * * 1,2,4,5` (not currently set up)
+- A. VIP Wireless daily post — `CRON_TZ=America/New_York 45 6 * * 1-5`
+- (B. posting check-in is retired — owner makes no posts on Sat/Sun; skip it)
+- C. VIP Wireless TikTok check-in — `CRON_TZ=America/New_York 0 11 * * 1-5` (not currently set up)
 Turn on push notifications for both (email too for A). Copy prompts verbatim.
 
 ## Step 4 — confirm
