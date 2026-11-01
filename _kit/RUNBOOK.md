@@ -182,6 +182,16 @@ Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost a
 7. Store & neighborhood: walk-ins welcome, hours, accessories, Ria transfer, SIM activation
 8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
 9. We buy phones: sell your old phone for cash at the store (bring it in for a quote)
+10. FREE PHONE offer (see below)
+
+Free phone offer (owner, 2026-11-01, ongoing until the owner says it ends): customers who
+start a NEW ACTIVATION and pay 3 MONTHS of their bill in advance get a FREE PHONE.
+Feature it regularly (about once a week, Boost-ready) and mention it in SIM-activation and
+phones-for-sale posts. Wording: "Get a FREE phone when you pay 3 months in advance on a new
+activation" / "New activation + 3 months paid = FREE phone". Say only what the owner gave:
+no carrier name, phone models, plan prices, dollar values or end date unless the owner
+confirms them in chat; CTA "Call 380-271-8085 or walk in for details". Don't combine it with
+Acima wording in the same headline (the free phone isn't financed).
 
 Financing (owner, 2026-10-21): customers can finance / lease-to-own a phone through Acima.
 Mention it in EVERY post or video about buying a phone from us (phones for sale, unlocked
