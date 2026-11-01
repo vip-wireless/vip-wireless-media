@@ -19,15 +19,14 @@ Ria money transfer, SIM activation, and phone financing / lease-to-own through A
 - Prefer the store's own photos/videos (Drive folders 1–3, `_kit/photos`) over stock.
 
 ## Weekly split (America/New_York)
-Owner's instruction (2026-10-16): posts are made ONLY on Metricool days. Tue, Thu and Sun
-are the owner's own days — make nothing, send nothing, and skip them in the rotation.
+Owner's instruction (2026-11-01): posts are made ONLY on Metricool days Mon, Tue, Thu, Fri.
+Wed, Sat and Sun are the owner's own days — make nothing, send nothing, and skip them in the rotation.
 | Day | Instagram (+Facebook auto-share) | TikTok |
 |---|---|---|
-| Mon, Wed, Fri, Sat | Metricool schedules it after approval | Owner posts manually |
-| Tue, Thu, Sun | No post from us (owner's day) | No post from us |
-If a run starts on Tue/Thu/Sun, stop without making or sending anything.
-**OCTOBER 2026 EXCEPTION (owner, 2026-10-21):** Oct 22–31, 2026 every day is a Metricool day
-(post daily, Tue/Thu/Sun included). From Nov 1, 2026 the table above applies again.
+| Mon, Tue, Thu, Fri | Metricool schedules it after approval | Owner posts manually |
+| Wed, Sat, Sun | No post from us (owner's day) | No post from us |
+If a run starts on Wed/Sat/Sun, stop without making or sending anything.
+(History: Mon/Wed/Fri/Sat from 2026-10-16; every day Oct 22–31, 2026; Mon/Tue/Thu/Fri from 2026-11-01.)
 Metricool Free = 20 published posts/month per brand; 4 days/week stays under it.
 Before scheduling, count this month's Metricool posts (getScheduledPosts + LOG.md); if 20
 would be exceeded, don't schedule — tell the owner and ask them to post Instagram themselves.

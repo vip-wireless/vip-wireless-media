@@ -27,9 +27,9 @@ In a new chat with the connectors above turned on, ask Claude to create these sc
 tasks with the exact schedule and prompt text below. Then the previous operator deletes
 their copies so posts aren't duplicated.
 
-### A. "VIP Wireless daily post" — Mon, Wed, Fri, Sat 6:45 AM America/New_York
+### A. "VIP Wireless daily post" — Mon, Tue, Thu, Fri 6:45 AM America/New_York
 ```
-Create today's VIP Wireless social media post and get it approved by 7 AM (America/New_York). This task runs only on Metricool days (Mon/Wed/Fri/Sat); Tue/Thu/Sun are the owner's own days, so if today is one of those, stop without making or sending anything.
+Create today's VIP Wireless social media post and get it approved by 7 AM (America/New_York). This task runs only on Metricool days (Mon/Tue/Thu/Fri); Wed/Sat/Sun are the owner's own days, so if today is one of those, stop without making or sending anything.
 
 1. Attach the GitHub repo vip-wireless/vip-wireless-media with push access (add_repo), clone it, and read _kit/RUNBOOK.md completely. Follow it exactly — it has the hard rules, the weekday split, the steps, the theme rotation, the DARK/LIGHT look rotation and the Metricool details.
 2. Also read the Google Doc "VIP Wireless – Content Brief (read me first)" (Drive file id 19p4WsC-54k2_YgSHTAfZpzOqPbky8L1Q_3nfdT-OcQE) and LOG.md in the repo. Check the Drive folder "VIP Wireless – Social Content" (id 1YyAjIMyijKmKwrhaVM9ujd7YtU6VDUS8) subfolders 1–3 for new photos/videos from the owner and prefer them.
@@ -39,14 +39,14 @@ Create today's VIP Wireless social media post and get it approved by 7 AM (Ameri
 6. Log the day in LOG.md (including the look, DARK or LIGHT) and push.
 ```
 
-### B. "VIP Wireless posting check-in" — DISABLED since 2026-10-16 (owner: no posts on Tue/Thu/Sun). Don't create it.
+### B. "VIP Wireless posting check-in" — DISABLED since 2026-10-16 (owner: no posts on the owner's own days). Don't create it.
 ```
-It is 11 AM on one of the VIP Wireless owner's manual posting days (Tuesday, Thursday or Sunday). Send the owner a short, friendly check-in with SendUserMessage, asking whether today's post is up on Instagram (with Share to Facebook on) and TikTok, and telling them to reply 'posted' when done. Wait for the reply. If posted, attach the repo vip-wireless/vip-wireless-media with push access, clone it, mark today's entry in LOG.md as posted manually (committing as "VIP Wireless Bot <bot@vip-wireless.invalid>") and push. Never open or act on Facebook, Instagram or TikTok through a browser or the owner's computer, and never publish anything yourself.
+It is 11 AM on one of the VIP Wireless owner's manual posting days (Wednesday, Saturday or Sunday). Send the owner a short, friendly check-in with SendUserMessage, asking whether today's post is up on Instagram (with Share to Facebook on) and TikTok, and telling them to reply 'posted' when done. Wait for the reply. If posted, attach the repo vip-wireless/vip-wireless-media with push access, clone it, mark today's entry in LOG.md as posted manually (committing as "VIP Wireless Bot <bot@vip-wireless.invalid>") and push. Never open or act on Facebook, Instagram or TikTok through a browser or the owner's computer, and never publish anything yourself.
 ```
 
-### C. "VIP Wireless TikTok check-in" — Mon, Wed, Fri, Sat 11:00 AM America/New_York
+### C. "VIP Wireless TikTok check-in" — Mon, Tue, Thu, Fri 11:00 AM America/New_York
 ```
-It is 11 AM on a VIP Wireless Metricool day (Monday, Wednesday, Friday or Saturday). Instagram is handled by Metricool, so this check-in is ONLY about TikTok. Send the owner one short message with SendUserMessage asking whether today's video is posted on TikTok and to reply 'posted' when done. Don't mention Instagram or Facebook. Wait for the reply. If posted, attach the repo vip-wireless/vip-wireless-media with push access, clone it, note today's TikTok as posted in LOG.md (committing as "VIP Wireless Bot <bot@vip-wireless.invalid>") and push. Never open or act on social accounts through a browser, and never publish anything yourself.
+It is 11 AM on a VIP Wireless Metricool day (Monday, Tuesday, Thursday or Friday). Instagram is handled by Metricool, so this check-in is ONLY about TikTok. Send the owner one short message with SendUserMessage asking whether today's video is posted on TikTok and to reply 'posted' when done. Don't mention Instagram or Facebook. Wait for the reply. If posted, attach the repo vip-wireless/vip-wireless-media with push access, clone it, note today's TikTok as posted in LOG.md (committing as "VIP Wireless Bot <bot@vip-wireless.invalid>") and push. Never open or act on social accounts through a browser, and never publish anything yourself.
 ```
 
 ## 3. Check after handover
