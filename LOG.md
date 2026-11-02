@@ -35,3 +35,4 @@
 | 2026-11-01 | Owner OK'd online product photos for the free phone offer (Galaxy A16 / Moto G 5G / Moto G Play style); save to _kit/photos/offer_phones/ and reuse. | — | rule |
 | 2026-11-01 | FREE PHONE hero image created (AI-generated, three budget Androids, no logos/text): _kit/photos/offer_phones/free_phone_hero.png (+ _alt). Use it for every free phone offer post. | — | asset |
 | 2026-11-01 | Free phone offer: transparent cutouts added (_kit/photos/offer_phones/free_phone_cutout*.png); owner OK'd any background. | — | asset |
+| 2026-11-02 | FREE PHONE offer: "New activation + 3 months paid = FREE phone" (IMAGE post, Boost-ready; three-phone cutout on podium, call card 380-271-8085) — Format: IMAGE — Look: LIGHT — draft sent ~6:55 AM, awaiting approval. Nov Metricool count before this post: 0 | — | Metricool day: IG POST (image) after approval; TikTok manual (photo post) — owner posts |
