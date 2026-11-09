@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+/* LIGHT theme — FREE PHONE offer video, 2026-11-09 */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#f7f5f2;overflow:hidden;font-family:Inter,sans-serif;color:#141416}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.045) 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.16),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
+.logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.18);z-index:5}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
+@keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s1{animation:inout 2.6s .2s both}
+.s2{animation:inout 3s 2.9s both;justify-content:flex-start;padding-top:290px}
+.s3{animation:inout 3s 6s both}
+.s4{animation:inhold 3.2s 9.1s both}
+.big{font-size:130px;font-weight:900;line-height:.98;letter-spacing:-.035em}
+.red{color:#d71928}
+.q{display:inline-block;align-self:flex-start;background:#141416;color:#fff;font-weight:900;font-size:44px;letter-spacing:.06em;padding:14px 28px;border-radius:12px;margin-bottom:36px;animation:wob .6s .3s both}
+@keyframes wob{0%{transform:scale(.4) rotate(-12deg);opacity:0}70%{transform:scale(1.08) rotate(3deg);opacity:1}100%{transform:rotate(-2deg)}}
+.free{display:inline-block;color:#fff;background:#d71928;padding:0 30px 10px;border-radius:24px;transform:rotate(-3deg);animation:slam .5s 1.5s both;box-shadow:0 24px 60px rgba(215,25,40,.35)}
+@keyframes slam{0%{transform:scale(2.6) rotate(-10deg);opacity:0}60%{transform:scale(.92) rotate(-2deg);opacity:1}100%{transform:scale(1) rotate(-3deg);opacity:1}}
+.h2{font-size:140px;font-weight:900;letter-spacing:-.04em;text-align:center;line-height:.95}
+.stage{position:relative;width:960px;height:750px;margin-top:40px;align-self:center}
+.stage img{position:absolute;left:0;top:0;width:960px;animation:rise .9s 3.1s cubic-bezier(.2,1.4,.4,1) both;filter:drop-shadow(0 30px 40px rgba(0,0,0,.18))}
+@keyframes rise{from{transform:translateY(260px) scale(.7);opacity:0}to{transform:none;opacity:1}}
+.badge{position:absolute;right:-30px;top:-30px;width:250px;height:250px;border-radius:50%;background:#d71928;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(10deg);box-shadow:0 24px 60px rgba(215,25,40,.35);animation:pop .45s 3.9s both;z-index:3}
+.badge b{font-size:84px;font-weight:900;line-height:1}
+.badge span{font-size:30px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+@keyframes pop{0%{opacity:0;scale:.3}70%{opacity:1;scale:1.15}100%{opacity:1;scale:1}}
+.conf{position:absolute;width:22px;height:34px;border-radius:5px;opacity:0;animation:fall 2.4s linear both}
+@keyframes fall{0%{opacity:0;transform:translateY(-120px) rotate(0)}10%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateY(820px) rotate(540deg)}}
+.card{background:#fff;border-radius:34px;padding:40px 46px;box-shadow:0 20px 50px rgba(0,0,0,.10);font-size:74px;font-weight:900;letter-spacing:-.02em;line-height:1.05;display:flex;align-items:center;gap:30px;opacity:0}
+.card .ic{font-size:90px}
+.c1{animation:pop .45s 6.4s both}
+.c2{animation:pop .45s 7.1s both}
+.plus,.eq{font-size:110px;font-weight:900;text-align:center;line-height:1.2;color:#d71928;opacity:0}
+.plus{animation:pop .3s 6.9s both}
+.eq{animation:pop .3s 7.6s both}
+.res{background:#d71928;color:#fff;border-radius:34px;padding:34px 46px;font-size:110px;font-weight:900;text-align:center;letter-spacing:-.03em;box-shadow:0 26px 60px rgba(215,25,40,.35);opacity:0;animation:slam .5s 7.9s both}
+.cta{font-size:92px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.phone{margin-top:50px;text-align:center;font-size:124px;font-weight:900;letter-spacing:-.04em;color:#141416;animation:pulsen .8s 9.8s ease-in-out infinite alternate}
+@keyframes pulsen{to{transform:scale(1.06);color:#d71928}}
+.info{text-align:center;margin-top:40px;font-size:44px;line-height:1.5;color:#4a4a52;font-weight:500}
+.walk{text-align:center;margin-top:40px;font-size:38px;font-weight:800;color:#d71928;letter-spacing:.12em;text-transform:uppercase}
+.mini{width:520px;align-self:center;margin-bottom:30px;filter:drop-shadow(0 20px 30px rgba(0,0,0,.15))}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:#d71928;animation:bar 12.3s linear forwards}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="scene s1">
+  <div class="q">WAIT…</div>
+  <div class="big">What if your<br>next phone<br>was <span class="free">FREE?</span></div>
+</div>
+
+<div class="scene s2">
+  <div class="h2" style="position:relative;z-index:2">FREE <span class="red">PHONE</span></div>
+  <div class="stage"><img src="../../_kit/photos/offer_phones/free_phone_cutout_podium.png">
+    <div class="badge"><b>FREE</b><span>for you</span></div></div>
+</div>
+<div id="confetti" style="position:absolute;inset:0;z-index:0"></div>
+
+<div class="scene s3">
+  <div class="card c1"><span class="ic">📲</span>New activation</div>
+  <div class="plus">+</div>
+  <div class="card c2"><span class="ic">🗓️</span>3 months paid<br>in advance</div>
+  <div class="eq">=</div>
+  <div class="res">FREE PHONE 🎉</div>
+</div>
+
+<div class="scene s4">
+  <img class="mini" src="../../_kit/photos/offer_phones/free_phone_cutout.png">
+  <div class="cta">Call to claim<br><span class="red">yours</span> 👇</div>
+  <div class="phone">380-271-8085</div>
+  <div class="info">or walk in · 4257 E Main St, Whitehall</div>
+  <div class="walk">Open daily 10:30 AM – 8 PM</div>
+</div>
+<div class="bar"></div>
+<script>
+const cols=['#d71928','#141416','#f2a900','#d71928','#ffffff'];const c=document.getElementById('confetti');
+for(let i=0;i<34;i++){const d=document.createElement('div');d.className='conf';d.style.left=(40+Math.random()*1000)+'px';d.style.top=(240+Math.random()*200)+'px';d.style.background=cols[i%5];if(i%5==4)d.style.border='2px solid #ddd';d.style.animationDelay=(3.7+Math.random()*0.8)+'s';d.style.animationDuration=(1.8+Math.random()*0.8)+'s';c.appendChild(d);}
+</script>
+</body></html>
