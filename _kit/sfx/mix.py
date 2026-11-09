@@ -15,7 +15,7 @@ for k, c in enumerate(cues):
     ms = int(float(at) * 1000)
     parts.append(f"[{k+1}:a]adelay={ms}|{ms},volume={vol}[a{k}]")
 mix = "".join(f"[a{k}]" for k in range(len(cues)))
-fc = ";".join(parts) + f";{mix}amix=inputs={len(cues)}:normalize=0,alimiter=limit=0.95[aout]"
+fc = ";".join(parts) + f";{mix}amix=inputs={len(cues)}:normalize=0,alimiter=limit=0.95,apad[aout]"
 args += ["-filter_complex", fc, "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-c:a", "aac",
          "-b:a", "192k", "-shortest", out]
 subprocess.run(args, check=True); print("mixed", out)
