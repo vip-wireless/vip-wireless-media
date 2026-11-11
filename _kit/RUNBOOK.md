@@ -232,10 +232,18 @@ The owner likes the designs but plain black/white with red every day "feels all 
 - Use seasonal colors regularly: `_kit/templates/video_template_seasonal.html` has two looks
   set by the body class — `autumn` (orange/amber/brown with falling leaves) and `halloween`
   (purple night, glowing moon, flying bats, orange accents). Use HALLOWEEN for all Halloween
-  deal/countdown posts Oct 24–31 and often in late October; AUTUMN through November
-  (Thanksgiving). Later: winter/holiday colors in December, etc. — add a new body-class
+  deal/countdown posts Oct 24–31 and often in late October. Add a new body-class
   palette to the seasonal template when a new season starts.
-- Log the look as DARK, LIGHT, AUTUMN or HALLOWEEN. Never 3 posts in a row with the same
+- Seasonal calendar (owner, 2026-11-11: "autumn is done, move from autumn colors"; Claude set the dates):
+  | Dates | Looks to use |
+  |---|---|
+  | Nov 12 – Nov 19, 2026 | General only: DARK / LIGHT (no AUTUMN any more) |
+  | Nov 20 – Nov 30, 2026 (Thanksgiving 26, Black Friday 27, Cyber Monday 30) | BLACKFRIDAY (body class `blackfriday`: black + gold + VIP red, gold confetti) about every other post; DARK/LIGHT in between |
+  | Dec 1 – Dec 31, 2026 | HOLIDAY (body class `holiday`: deep green + red + gold, falling snow) about every other post; DARK/LIGHT in between |
+  | From Jan 1, 2027 | General DARK / LIGHT until the next season |
+  The BLACKFRIDAY look is colors only — never advertise a Black Friday / Cyber Monday deal
+  unless the owner has approved it in chat (see Trends, events and deal ideas).
+- Log the look as DARK, LIGHT, BLACKFRIDAY, HOLIDAY (or AUTUMN/HALLOWEEN historically). Never 3 posts in a row with the same
   look; in season, roughly every other post should be seasonal.
 - Vary the animation too: the seasonal template has pop-in / slide-in / drop-in scene entries
   and a pulsing phone number; mix entries, zooms on photos, counters, text pops so videos
@@ -274,5 +282,5 @@ The owner likes the designs but plain black/white with red every day "feels all 
   (name@seconds[:volume]). Read the scene timings from the HTML animation delays. On Instagram keep any
   library track low (audioVolume ~15–20) so the effects stay audible; add new effects to make_sfx.py as needed.
 
-Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety);
+Brand: VIP red #D71928 with either a black (DARK) or warm off-white #F7F5F2 (LIGHT) background, or a seasonal palette (see Design variety and its seasonal calendar);
 Inter font; logo in `_kit/brand` (on LIGHT it sits in a black pill, as in the light templates).
