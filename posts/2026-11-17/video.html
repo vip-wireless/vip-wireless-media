@@ -1,0 +1,113 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+/* LIGHT theme — Phone-care tip: check Battery Health before buying a new phone, 2026-11-17 */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#f7f5f2;overflow:hidden;font-family:Inter,sans-serif;color:#141416}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.045) 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.15),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
+.logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.18);z-index:5}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
+@keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
+@keyframes slidein{0%{opacity:0;transform:translateX(160px)}9%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateX(-120px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s1{animation:inout 2.7s .2s both}
+.s2{animation:slidein 3.4s 2.9s both}
+.s3{animation:inout 3s 6.3s both}
+.s4{animation:inhold 3.1s 9.3s both}
+.red{color:#d71928}
+.tag{display:inline-block;align-self:flex-start;background:#141416;color:#fff;font-weight:900;font-size:40px;letter-spacing:.06em;padding:14px 28px;border-radius:12px;margin-bottom:40px;animation:wob .6s .35s both}
+@keyframes wob{0%{transform:scale(.4) rotate(-12deg);opacity:0}70%{transform:scale(1.08) rotate(3deg);opacity:1}100%{transform:rotate(-2deg)}}
+.big{font-size:118px;font-weight:900;line-height:1;letter-spacing:-.035em}
+.hl{display:inline-block;color:#fff;background:#d71928;padding:0 26px 10px;border-radius:22px;transform:rotate(-2deg);animation:slam .5s 1.3s both;box-shadow:0 24px 60px rgba(215,25,40,.3);margin-top:14px}
+@keyframes slam{0%{transform:scale(2.4) rotate(-10deg);opacity:0}60%{transform:scale(.94) rotate(-1deg);opacity:1}100%{transform:scale(1) rotate(-2deg);opacity:1}}
+.eyes{font-size:120px;position:absolute;right:20px;top:560px;animation:peek .5s 1.7s both}
+@keyframes peek{from{opacity:0;transform:translateY(40px) rotate(-20deg)}to{opacity:1;transform:rotate(8deg)}}
+/* settings mock */
+.h3{font-size:64px;font-weight:900;letter-spacing:-.02em;margin-bottom:30px;text-align:center}
+.panel{background:#fff;border-radius:36px;box-shadow:0 24px 60px rgba(0,0,0,.12);overflow:hidden}
+.row{display:flex;align-items:center;gap:26px;padding:32px 40px 32px 70px;font-size:52px;font-weight:700;border-bottom:2px solid #eee;position:relative}
+.row:last-child{border-bottom:0}
+.row .ico{width:78px;height:78px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:46px}
+.row .chev{margin-left:auto;color:#b5b5ba;font-weight:400}
+.r1{animation:tap .5s 3.5s both}.r2{animation:tap .5s 4.1s both}.r3{animation:tap .5s 4.7s both}
+@keyframes tap{0%{background:#fff}40%{background:#ffe3e5}100%{background:#fff}}
+.step{position:absolute;left:8px;top:50%;margin-top:-24px;width:48px;height:48px;border-radius:50%;background:#d71928;color:#fff;font-size:28px;font-weight:900;display:flex;align-items:center;justify-content:center;opacity:0}
+.r1 .step{animation:pop .3s 3.5s both}.r2 .step{animation:pop .3s 4.1s both}.r3 .step{animation:pop .3s 4.7s both}
+@keyframes pop{0%{opacity:0;scale:.3}70%{opacity:1;scale:1.15}100%{opacity:1;scale:1}}
+.cap{margin-top:40px;background:#fff;border-radius:36px;box-shadow:0 24px 60px rgba(0,0,0,.12);padding:40px 44px;opacity:0;animation:pop .45s 5.2s both}
+.cap .lbl{font-size:44px;font-weight:700;color:#55555c}
+.cap .val{font-size:120px;font-weight:900;color:#d71928;letter-spacing:-.04em;line-height:1.05}
+.meter{height:40px;border-radius:20px;background:#eee;overflow:hidden;margin-top:14px;position:relative}
+.meter i{position:absolute;left:0;top:0;bottom:0;background:#d71928;border-radius:20px;animation:drain 1s 5.3s cubic-bezier(.3,.8,.3,1) both}
+@keyframes drain{from{width:100%;background:#2ab34a}to{width:78%;background:#d71928}}
+.mark80{position:absolute;left:80%;top:-6px;bottom:-6px;width:6px;background:#141416}
+/* scene 3 */
+.under{font-size:96px;font-weight:900;letter-spacing:-.03em;line-height:1.02}
+.not{font-size:62px;font-weight:800;margin-top:34px;line-height:1.15;color:#4a4a52}
+.not s{text-decoration-thickness:8px;text-decoration-color:#d71928}
+.fix{margin-top:30px;font-size:96px;font-weight:900;color:#fff;background:#d71928;border-radius:30px;padding:24px 40px;box-shadow:0 26px 60px rgba(215,25,40,.3);animation:slam .5s 7.6s both;align-self:flex-start}
+.chips{display:flex;flex-direction:column;gap:22px;margin-top:40px}
+.chip{background:#fff;border-radius:26px;padding:26px 30px;font-size:44px;white-space:nowrap;font-weight:800;box-shadow:0 14px 34px rgba(0,0,0,.08);opacity:0}
+.k1{animation:pop .4s 8.1s both}.k2{animation:pop .4s 8.4s both}
+.fine{margin-top:28px;font-size:30px;line-height:1.35;color:#6a6a72;font-weight:500}
+/* scene 4 */
+.rev{background:#fff;border-radius:30px;padding:34px 40px;box-shadow:0 18px 44px rgba(0,0,0,.10);margin-bottom:56px}
+.rev .stars{font-size:46px;color:#f2a900;letter-spacing:6px}
+.rev p{font-size:44px;font-weight:700;line-height:1.3;margin-top:10px}
+.rev .who{font-size:34px;color:#6a6a72;font-weight:600;margin-top:12px}
+.cta{font-size:88px;font-weight:900;line-height:1;text-align:center;letter-spacing:-.03em}
+.phone{margin-top:44px;text-align:center;font-size:124px;font-weight:900;letter-spacing:-.04em;color:#141416;animation:pulsen .8s 10s ease-in-out infinite alternate}
+@keyframes pulsen{to{transform:scale(1.06);color:#d71928}}
+.info{text-align:center;margin-top:36px;font-size:44px;line-height:1.5;color:#4a4a52;font-weight:500}
+.walk{text-align:center;margin-top:30px;font-size:38px;font-weight:800;color:#d71928;letter-spacing:.12em;text-transform:uppercase}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:#d71928;animation:bar 12.4s linear forwards}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="scene s1">
+  <div class="tag">10-SECOND PHONE CHECK 🔋</div>
+  <div class="big">Buying a new<br>phone?<br><span class="hl">Check this first.</span></div>
+  <div class="eyes">👀</div>
+</div>
+
+<div class="scene s2">
+  <div class="h3">On your iPhone:</div>
+  <div class="panel">
+    <div class="row r1"><span class="step">1</span><span class="ico" style="background:#8e8e93">⚙️</span>Settings<span class="chev">›</span></div>
+    <div class="row r2"><span class="step">2</span><span class="ico" style="background:#34c759">🔋</span>Battery<span class="chev">›</span></div>
+    <div class="row r3"><span class="step">3</span><span class="ico" style="background:#34c759">❤️</span>Battery Health<span class="chev">›</span></div>
+  </div>
+  <div class="cap">
+    <div class="lbl">Maximum Capacity</div>
+    <div class="val">78%</div>
+    <div class="meter"><i></i><span class="mark80"></span></div>
+  </div>
+</div>
+
+<div class="scene s3">
+  <div class="under">Under <span class="red">80%?</span></div>
+  <div class="not">You may not need a <s style="white-space:nowrap">new phone</s>.</div>
+  <div class="fix">Just a new battery 🔋</div>
+  <div class="chips">
+    <div class="chip k1">⏱️ Most iPhone batteries: ~15 min*</div>
+    <div class="chip k2">🎁 FREE screen protector w/ repair</div>
+  </div>
+  <div class="fine">*Most iPhone screens &amp; batteries. Back glass and other repairs may take longer and depend on parts availability.</div>
+</div>
+
+<div class="scene s4">
+  <div class="rev"><div class="stars">★★★★★</div>
+    <p>“They were able to quickly replace my phone battery so I could use my phone the same day.”</p>
+    <div class="who">— Kennedy S., Google review</div></div>
+  <div class="cta">Not sure? Call us<br>&amp; we'll <span class="red">check it</span> 👇</div>
+  <div class="phone">380-271-8085</div>
+  <div class="info">or walk in · 4257 E Main St, Whitehall</div>
+  <div class="walk">Open daily 10:30 AM – 8 PM</div>
+</div>
+<div class="bar"></div>
+</body></html>
