@@ -281,6 +281,12 @@ BLACKFRIDAY look and the "never 3 in a row" rule for these dates (image or video
   Never the game's actual characters (no look-alikes of the GTA 6 leads), never guns or weapons, nothing implying a
   robbery. Sources, in order: owner's own photos/cutouts in Drive folders 1–3 (e.g. staff in a bandana holding a phone),
   owner-made images from free AI tools dropped into Drive, or simple original SVG cartoon characters drawn in the HTML.
+  Owner (2026-11-19) chose: a Latino / Spanish-looking repair crew DRAWN BY CLAUDE (not the owner's photo). Ready-made:
+  `_kit/characters/crew_marco.svg` (red VIP shirt, red bandana mask, backwards cap, cracked phone + screwdriver) and
+  `crew_sofia.svg` (teal shirt + black apron, pink bandana mask, curly bun, hoops, shows a FIXED phone). Example layout the
+  owner approved the idea from: `_kit/templates/gta_crew_example.html`. Use them on most GTA days (flip with
+  transform:scaleX(-1), scale, pop-in animations in videos); draw new poses/crew members in the same style when useful.
+  Keep it friendly and funny, no stereotypes (no sombreros/props), no guns.
 - Logo: the VIP logo must sit CENTERED in its black pill (owner 2026-11-19). All templates now use
   `_kit/brand/logo_pill.jpg` (tightly cropped) with a flex-centered `.logo` — copy that markup exactly; check it in the
   rendered frame.

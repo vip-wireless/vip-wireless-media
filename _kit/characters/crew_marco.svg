@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1000">
+<!-- Original character "Marco", VIP repair crew (owner 2026-11-19). Bandana mask, backwards cap, holds cracked phone + screwdriver. -->
+<g stroke="#000" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <!-- legs -->
+ <path d="M220 700 L205 960 L285 960 L300 760 L315 960 L395 960 L380 700Z" fill="#23304a"/>
+ <path d="M200 955 h95 v35 h-110 q0 -20 15 -35Z M310 955 h95 q15 15 15 35 h-110Z" fill="#111"/>
+ <!-- right arm (down, screwdriver) behind torso -->
+ <path d="M420 430 Q490 520 505 610" fill="none" stroke-width="66"/>
+ <path d="M420 430 Q490 520 505 610" fill="none" stroke="#d71928" stroke-width="50"/>
+ <path d="M500 600 L515 680" fill="none" stroke-width="44"/>
+ <path d="M500 600 L515 680" fill="none" stroke="#a8683f" stroke-width="30"/>
+ <!-- torso: red work shirt -->
+ <path d="M175 420 Q300 360 425 420 L405 720 L195 720Z" fill="#d71928"/>
+ <path d="M300 395 L300 715" fill="none" stroke-width="5"/>
+ <circle cx="300" cy="470" r="6" fill="#fff" stroke-width="3"/><circle cx="300" cy="540" r="6" fill="#fff" stroke-width="3"/>
+ <!-- name patch -->
+ <rect x="320" y="455" width="80" height="40" rx="8" fill="#fff" stroke-width="5"/>
+ <text x="360" y="483" font-family="Anton,Impact,sans-serif" font-size="24" text-anchor="middle" fill="#d71928" stroke="none">VIP</text>
+ <!-- tool belt -->
+ <rect x="190" y="660" width="220" height="44" rx="6" fill="#5a3a1e"/>
+ <rect x="215" y="650" width="44" height="70" rx="6" fill="#7a5230"/><rect x="335" y="650" width="50" height="70" rx="6" fill="#7a5230"/>
+ <path d="M230 650 l6 -40 M248 650 l-4 -32" stroke-width="7" fill="none"/>
+ <!-- neck -->
+ <rect x="268" y="330" width="64" height="70" fill="#a8683f"/>
+ <!-- head -->
+ <ellipse cx="300" cy="245" rx="92" ry="108" fill="#a8683f"/>
+ <ellipse cx="206" cy="255" rx="18" ry="28" fill="#a8683f"/><ellipse cx="394" cy="255" rx="18" ry="28" fill="#a8683f"/>
+ <!-- backwards cap -->
+ <path d="M208 220 Q210 120 300 118 Q392 120 394 220 Q300 190 208 220Z" fill="#141416"/>
+ <path d="M330 125 Q420 95 440 150 Q400 150 372 160Z" fill="#d71928"/>
+ <!-- eyes + brows -->
+ <ellipse cx="262" cy="245" rx="22" ry="16" fill="#fff" stroke-width="5"/><ellipse cx="338" cy="245" rx="22" ry="16" fill="#fff" stroke-width="5"/>
+ <circle cx="268" cy="247" r="9" fill="#2a1a10" stroke="none"/><circle cx="344" cy="247" r="9" fill="#2a1a10" stroke="none"/>
+ <path d="M232 222 Q262 205 290 218 M310 214 Q338 205 368 222" fill="none" stroke-width="12"/>
+ <!-- bandana mask -->
+ <path d="M206 262 Q300 285 394 262 L392 300 Q360 352 300 372 Q240 352 208 300Z" fill="#d71928"/>
+ <path d="M394 268 L432 300 L410 318Z" fill="#d71928"/>
+ <g fill="#fff" stroke="none"><circle cx="250" cy="300" r="7"/><circle cx="300" cy="320" r="7"/><circle cx="350" cy="300" r="7"/><circle cx="275" cy="340" r="5"/><circle cx="325" cy="340" r="5"/><path d="M296 290 l4 -10 4 10 10 0 -8 6 3 10 -9 -6 -9 6 3 -10 -8 -6Z"/></g>
+ <!-- left arm raised with phone -->
+ <path d="M185 435 Q105 370 128 250" fill="none" stroke-width="66"/>
+ <path d="M185 435 Q105 370 128 250" fill="none" stroke="#d71928" stroke-width="50"/>
+ <circle cx="130" cy="240" r="30" fill="#a8683f"/>
+ <!-- phone (cracked) -->
+ <rect x="88" y="120" width="86" height="160" rx="16" fill="#111" transform="rotate(-12 131 200)"/>
+ <rect x="98" y="132" width="66" height="132" rx="8" fill="#3fd0ff" stroke-width="4" transform="rotate(-12 131 200)"/>
+ <path d="M115 150 L135 190 L118 215 L142 248 M135 190 L158 176" fill="none" stroke="#fff" stroke-width="5" transform="rotate(-12 131 200)"/>
+ <!-- screwdriver in right hand -->
+ <circle cx="517" cy="688" r="28" fill="#a8683f"/>
+ <rect x="500" y="600" width="34" height="70" rx="10" fill="#ffcf3f" transform="rotate(-20 517 688)"/>
+ <path d="M517 600 L517 545" stroke="#9aa3ad" stroke-width="12" transform="rotate(-20 517 688)"/>
+</g>
+</svg>
