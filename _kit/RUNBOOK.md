@@ -177,7 +177,7 @@ Aim for roughly half boost-ready (at least 3 a week); the owner may test-boost a
 2. Google review spotlight (one approved review)
 3. Phone-care tip (battery health, charging port lint, case & protector, water damage do's/don'ts)
 4. Real repair / before-after (owner's photos or videos when available)
-5. Current deal (free screen protector with every repair)
+5. Current deal (free screen protector with every repair; LIFETIME screen protector $39.99 — pay once, free replacements for life)
 6. Android repairs too (Samsung/Galaxy etc.)
 7. Store & neighborhood: walk-ins welcome, hours, accessories, Ria transfer, SIM activation
 8. Unlocked phones for sale (show real in-store phones/boxes when available, e.g. `_kit/photos/photo_06_new_iphones_in_box.jpg`)
@@ -238,7 +238,7 @@ The owner likes the designs but plain black/white with red every day "feels all 
   | Dates | Looks to use |
   |---|---|
   | Nov 12 – Nov 19, 2026 | General only: DARK / LIGHT (no AUTUMN any more) |
-  | Nov 20 – Nov 30, 2026 (Thanksgiving 26, Black Friday 27, Cyber Monday 30) | BLACKFRIDAY (body class `blackfriday`: black + gold + VIP red, gold confetti) about every other post; DARK/LIGHT in between |
+  | Nov 20 – Nov 27: see GTA 6 / VICE NEON POSTS below (owner override 2026-11-19). Nov 28 – Nov 30, 2026 (Thanksgiving 26, Black Friday 27, Cyber Monday 30) | BLACKFRIDAY (body class `blackfriday`: black + gold + VIP red, gold confetti) about every other post; DARK/LIGHT in between |
   | Dec 1 – Dec 31, 2026 | HOLIDAY (body class `holiday`: deep green + red + gold, falling snow) about every other post; DARK/LIGHT in between |
   | From Jan 1, 2027 | General DARK / LIGHT until the next season |
   The BLACKFRIDAY look is colors only — never advertise a Black Friday / Cyber Monday deal
@@ -249,6 +249,28 @@ The owner likes the designs but plain black/white with red every day "feels all 
   and a pulsing phone number; mix entries, zooms on photos, counters, text pops so videos
   don't feel templated. Keep text legible (big, high contrast) and inside the safe area.
 - Keep the VIP logo (black pill) and a touch of VIP red on every post so it's still on-brand.
+
+### GTA 6 / VICE NEON POSTS (owner, 2026-11-19) — Nov 20–27, 2026
+Owner: "make the next few days GTA 6 versions — colors, typography, everything; super eye-catching". This OVERRIDES the
+BLACKFRIDAY look and the "never 3 in a row" rule for these dates (image or video, keep the normal VIDEO/IMAGE alternation).
+| Date | Look (log it as) |
+|---|---|
+| Fri Nov 20, Mon Nov 23 | VICE — GTA 6-style only (body class `vice`: Vice City sunset magenta/pink → orange, teal & purple neon, striped sun, palm silhouettes) |
+| Tue Nov 24 – Fri Nov 27 | VICEFRIDAY — GTA 6 neon × Black Friday combined (body class `vicefriday`: black night + neon pink/cyan + gold) |
+- Both palettes are in `video_template_seasonal.html`; copy the same styling for image posts (1080x1350). Headlines use
+  class `.neo` (Anton condensed italic, sunset gradient fill, dark outline, neon glow; `.neo.cyan` variant). Go big and
+  loud: loading-screen / game-HUD feel — split-panel "loading screen" art, mission cards ("MISSION: FIX YOUR SCREEN"),
+  wanted-level stars, "+RESPECT" / "MISSION PASSED"-style pop-ups, minimap pin for 4257 E Main St, neon glow, VHS sheen.
+- Inspired look ONLY: never write "GTA", "Grand Theft Auto", "Vice City", "Rockstar", never use their logo, characters,
+  screenshots or exact logo lettering (keeps posts boost-safe). Keep the VIP logo pill + a touch of VIP red.
+- Combined days: colors only — still NO Black Friday deal unless the owner approves one in chat (owner: "no need for
+  Black Friday for now"). "Black Friday week" wording is OK only as a vibe, never as a sale claim.
+- Feature the LIFETIME SCREEN PROTECTOR deal (below) on at least 2 of these days.
+
+## Lifetime screen protector deal (owner, 2026-11-19, ongoing until the owner ends it)
+"LIFETIME screen protector — $39.99. Pay once, get FREE replacements for life." Use exactly that; don't add
+conditions, limits or end dates the owner hasn't given (if people ask details → "call 380-271-8085"). Runs ALONGSIDE the
+existing deal: FREE screen protector with every repair (both still valid). Boost-ready-friendly; price may be shown.
 
 ### HALLOWEEN STORY POSTS (owner, 2026-10-23) — every post Oct 24–31, 2026
 - Look HALLOWEEN on all of them (video or image): genuinely SCARY/spooky — deep purple/black night,
