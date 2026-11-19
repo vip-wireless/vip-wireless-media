@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+/* LIGHT theme — Unlocked phones for sale + Acima, 2026-11-19 */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#f7f5f2;overflow:hidden;font-family:Inter,sans-serif;color:#141416}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.045) 1px,transparent 1px);background-size:60px 60px}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.15),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
+.logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.18);z-index:5}
+.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
+@keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
+@keyframes slidein{0%{opacity:0;transform:translateX(160px)}9%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateX(-120px)}}
+@keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.s1{animation:inout 2.7s .2s both}
+.s2{animation:slidein 3.4s 2.9s both}
+.s3{animation:inout 3s 6.3s both}
+.s4{animation:inhold 3.1s 9.3s both}
+.red{color:#d71928}
+.tag{display:inline-block;align-self:flex-start;background:#141416;color:#fff;font-weight:900;font-size:40px;letter-spacing:.06em;padding:14px 28px;border-radius:12px;margin-bottom:40px;animation:wob .6s .35s both}
+@keyframes wob{0%{transform:scale(.4) rotate(-12deg);opacity:0}70%{transform:scale(1.08) rotate(3deg);opacity:1}100%{transform:rotate(-2deg)}}
+.big{font-size:118px;font-weight:900;line-height:1;letter-spacing:-.035em}
+.hl{display:inline-block;color:#fff;background:#d71928;padding:0 26px 10px;border-radius:22px;transform:rotate(-2deg);animation:slam .5s 1.3s both;box-shadow:0 24px 60px rgba(215,25,40,.3);margin-top:14px}
+@keyframes slam{0%{transform:scale(2.4) rotate(-10deg);opacity:0}60%{transform:scale(.94) rotate(-1deg);opacity:1}100%{transform:scale(1) rotate(-2deg);opacity:1}}
+.eyes{font-size:120px;position:absolute;right:20px;top:560px;animation:peek .5s 1.7s both}
+@keyframes peek{from{opacity:0;transform:translateY(40px) rotate(-20deg)}to{opacity:1;transform:rotate(8deg)}}
+
+.pol{background:#fff;padding:22px 22px 80px;border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,.18);transform:rotate(-3deg);animation:zoomp 3.4s 2.9s both;position:relative}
+.pol img{width:100%;height:600px;object-fit:cover;border-radius:4px;display:block}
+.pol .cap2{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:40px;font-weight:800}
+@keyframes zoomp{0%{transform:rotate(-8deg) scale(.7);opacity:0}10%{transform:rotate(-3deg) scale(1);opacity:1}100%{transform:rotate(-3deg) scale(1.05);opacity:1}}
+.stk{position:absolute;right:-20px;top:-30px;background:#d71928;color:#fff;font-weight:900;font-size:44px;padding:16px 26px;border-radius:50px;transform:rotate(8deg);animation:pop .4s 3.6s both;box-shadow:0 14px 30px rgba(215,25,40,.35)}
+.h3{font-size:92px;font-weight:900;letter-spacing:-.03em;line-height:1;margin-bottom:50px}
+.chips{display:flex;flex-direction:column;gap:22px;margin-top:50px}
+.chip{background:#fff;border-radius:26px;padding:26px 30px;font-size:46px;white-space:nowrap;font-weight:800;box-shadow:0 14px 34px rgba(0,0,0,.08);opacity:0}
+@keyframes pop{0%{opacity:0;scale:.3}70%{opacity:1;scale:1.15}100%{opacity:1;scale:1}}
+.c1{animation:pop .4s 4.3s both}.c2{animation:pop .4s 4.7s both}
+.under{font-size:104px;font-weight:900;letter-spacing:-.03em;line-height:1.02}
+.fix{margin-top:40px;font-size:84px;font-weight:900;color:#fff;background:#d71928;border-radius:30px;padding:28px 40px;box-shadow:0 26px 60px rgba(215,25,40,.3);animation:slam .5s 7.0s both;align-self:flex-start;line-height:1.05}
+.k1{animation:pop .4s 7.7s both}.k2{animation:pop .4s 8.1s both}
+.cta{font-size:84px;font-weight:900;line-height:1.05;text-align:center;letter-spacing:-.03em}
+.phone{margin-top:50px;text-align:center;font-size:124px;font-weight:900;letter-spacing:-.04em;color:#141416;animation:pulsen .8s 10s ease-in-out infinite alternate}
+@keyframes pulsen{to{transform:scale(1.06);color:#d71928}}
+.info{text-align:center;margin-top:36px;font-size:44px;line-height:1.5;color:#4a4a52;font-weight:500}
+.walk{text-align:center;margin-top:30px;font-size:38px;font-weight:800;color:#d71928;letter-spacing:.12em;text-transform:uppercase}
+.bar{position:absolute;left:0;bottom:0;height:12px;background:#d71928;animation:bar 12.4s linear forwards}
+@keyframes bar{from{width:0}to{width:100%}}
+</style></head><body>
+<div class="grid"></div><div class="glow"></div>
+<div class="logo"><img src="../../_kit/brand/logo_wide.jpg"></div>
+
+<div class="scene s1">
+  <div class="tag">GIFT IDEA 🎁</div>
+  <div class="big">A new phone<br>on their<br>wish list?<br><span class="hl">We've got you.</span></div>
+  <div class="eyes">🎁</div>
+</div>
+
+<div class="scene s2">
+  <div class="h3">iPhones <span class="red">&amp;</span> Androids</div>
+  <div class="pol"><img src="../../_kit/photos/photo_06_new_iphones_in_box.jpg"><div class="cap2">In store at VIP Wireless 📍</div><div class="stk">NEW &amp; USED</div></div>
+  <div class="chips">
+    <div class="chip c1">📦 Stock changes — call to check</div>
+    <div class="chip c2">💵 Trading up? We buy phones too</div>
+  </div>
+</div>
+
+<div class="scene s3">
+  <div class="under">Want to pay<br><span class="red">over time?</span></div>
+  <div class="fix">Lease-to-own<br>with Acima 💳</div>
+  <div class="chips">
+    <div class="chip k1">✅ Financing available through Acima</div>
+    <div class="chip k2">📞 Ask us how it works</div>
+  </div>
+</div>
+
+<div class="scene s4">
+  <div class="cta">Call to check<br>what's <span class="red">in stock</span><br>today 👇</div>
+  <div class="phone">380-271-8085</div>
+  <div class="info">or walk in · 4257 E Main St, Whitehall</div>
+  <div class="walk">Open daily 10:30 AM – 8 PM</div>
+</div>
+<div class="bar"></div>
+</body></html>
