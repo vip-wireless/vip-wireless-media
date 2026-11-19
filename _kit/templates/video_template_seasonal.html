@@ -8,7 +8,7 @@ or "holiday" (deep green + red + gold, falling snow),
 "vicefriday" (GTA 6 neon x Black Friday: black night + neon pink/cyan + gold). Owner 2026-11-19. Use class .neo on headlines
 (Anton condensed italic, sunset gradient fill + neon glow). Inspired look only: never the GTA/Rockstar name, logo or characters. Owner 2026-11-11: autumn is done; see RUNBOOK Design variety for dates.
 Same 4-scene timing as the other templates (render 12.4s). Logo keeps its black pill; VIP red stays as an accent.
-Copy to posts/YYYY-MM-DD/, set the logo path to ../../_kit/brand/logo_wide.jpg, edit the scene text.
+Copy to posts/YYYY-MM-DD/, set the logo path to ../../_kit/brand/logo_pill.jpg, edit the scene text.
 -->
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -59,7 +59,8 @@ body.halloween .leaf{display:none}
 body.halloween .bat{display:block}
 /* logo */
 .logo{position:absolute;left:330px;top:110px;height:116px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;padding:10px 10px 0 10px;box-shadow:0 14px 34px rgba(0,0,0,.35);z-index:5}
-.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.logo img{mix-blend-mode:lighten;width:100%;height:auto;margin:0;display:block}
+.logo{display:flex!important;align-items:center;justify-content:center;padding:0 36px!important}
 /* scenes: each one enters differently for variety */
 .scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0;z-index:3}
 @keyframes popin{0%{opacity:0;transform:scale(.6) rotate(-6deg)}10%{opacity:1;transform:scale(1.04) rotate(1deg)}16%{transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:scale(1.1)}}
@@ -99,7 +100,7 @@ body.halloween .bat{display:block}
 <path d="M866 358 C920 310 1000 310 1070 350 C1000 330 930 340 872 370Z M866 358 C880 290 940 240 1010 240 C940 260 895 305 874 366Z M866 358 C820 290 750 270 680 290 C750 295 810 325 860 370Z M866 358 C800 340 730 360 690 420 C750 380 810 370 862 368Z"/>
 <rect x="0" y="720" width="1080" height="40"/></g></svg><div class="moon"></div>
 <div class="fx" id="fx"></div>
-<div class="logo"><img src="../brand/logo_wide.jpg"></div>
+<div class="logo"><img src="../brand/logo_pill.jpg"></div>
 
 <div class="scene s1">
   <div class="tag">Columbus · Whitehall</div>

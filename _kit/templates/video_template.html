@@ -7,7 +7,8 @@ html,body{width:1080px;height:1920px;background:#0a0a0b;overflow:hidden;font-fam
 .glow{position:absolute;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,40,.38),rgba(215,25,40,0) 65%);left:-60px;top:400px;animation:pulse 4s ease-in-out infinite alternate}
 @keyframes pulse{to{transform:scale(1.15) translateY(-80px)}}
 .logo{position:absolute;left:340px;top:120px;height:96px;width:400px;overflow:hidden}
-.logo img{mix-blend-mode:lighten;height:180px;margin-top:-42px;margin-left:-25px}
+.logo img{mix-blend-mode:lighten;width:100%;height:auto;margin:0;display:block}
+.logo{display:flex!important;align-items:center;justify-content:center;padding:0 36px!important}
 .scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
 @keyframes inout{0%{opacity:0;transform:translateY(60px)}8%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-40px)}}
 @keyframes inhold{0%{opacity:0;transform:scale(.92)}12%{opacity:1;transform:none}100%{opacity:1;transform:none}}
@@ -40,7 +41,7 @@ svg.crack path{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1s .5s 
 @keyframes bar{from{width:0}to{width:100%}}
 </style></head><body>
 <div class="grid"></div><div class="glow"></div>
-<div class="logo"><img src="../brand/logo_wide.jpg"></div>
+<div class="logo"><img src="../brand/logo_pill.jpg"></div>
 
 <div class="scene s1">
   <div style="position:relative">

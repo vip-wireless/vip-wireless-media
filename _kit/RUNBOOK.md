@@ -265,14 +265,25 @@ BLACKFRIDAY look and the "never 3 in a row" rule for these dates (image or video
   real VICE CITY scene — not just gradients. Use:
   - Backgrounds: `_kit/photos/vice/vice_day1_1080x1920.jpg`, `vice_day2_…` (sunset beach boulevard, pastel art-deco hotels,
     palms, pink convertible) for VICE days; `vice_night1_…`, `vice_night2_…` (neon night boulevard) for VICEFRIDAY days.
-    Original AI illustrations made for VIP (Higgsfield). For 1080x1350 image posts use background-size:cover. Can make more
-    with Higgsfield gpt_image_2_6 (same prompt style, "no text, no logos, no people") if variety is needed.
+    Original illustrations made for VIP. For 1080x1350 image posts use background-size:cover; vary crop/position, zoom,
+    tint and overlays so the 4 images don't feel repeated. Do NOT use Higgsfield (owner 2026-11-19: don't spend Higgsfield
+    credits) — reuse these, or use new images the owner adds to Drive folders 1–3.
   - Type: `_kit/templates/gta_type.css` — `.gta-money` (green cash-counter price, e.g. $39.99), `.gta-title` (white,
     thick black outline + hard shadow), `.gta-pink` (GTA 6 sunset gradient headline), `.gta-mission` (gold
     "MISSION PASSED"-style, use for the phone number), `.gta-hud` (black HUD bar labels). Example layout owner saw:
     `_kit/templates/gta_image_example.html`. Every price/number in these posts uses `.gta-money` or `.gta-mission`.
   - If the owner adds the free "Pricedown" font file to Drive folder 5 (Brand), download it to `_kit/brand/` and use it
     via @font-face in gta_type.css instead of Anton.
+- Owner (2026-11-19): the GTA look is for ALL topics on these days, not only the lifetime protector — free phone offer,
+  repairs (15-min fix, Android, before/after), reviews, other deals. Keep the normal theme rotation; only the look changes.
+- Characters (owner 2026-11-19: "masked characters, with phones or tools, a bit funny, no guns"): use ORIGINAL masked
+  "phone-repair crew" characters only — bandana / ski-mask style, holding a cracked phone, screwdriver, charger, phone box.
+  Never the game's actual characters (no look-alikes of the GTA 6 leads), never guns or weapons, nothing implying a
+  robbery. Sources, in order: owner's own photos/cutouts in Drive folders 1–3 (e.g. staff in a bandana holding a phone),
+  owner-made images from free AI tools dropped into Drive, or simple original SVG cartoon characters drawn in the HTML.
+- Logo: the VIP logo must sit CENTERED in its black pill (owner 2026-11-19). All templates now use
+  `_kit/brand/logo_pill.jpg` (tightly cropped) with a flex-centered `.logo` — copy that markup exactly; check it in the
+  rendered frame.
 - Inspired look ONLY: never write "GTA", "Grand Theft Auto", "Vice City", "Rockstar", never use their logo, characters,
   screenshots or exact logo lettering (keeps posts boost-safe). Keep the VIP logo pill + a touch of VIP red.
 - Combined days: colors only — still NO Black Friday deal unless the owner approves one in chat (owner: "no need for
