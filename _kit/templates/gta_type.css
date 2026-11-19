@@ -1,0 +1,12 @@
+/* GTA-style typography (owner 2026-11-19). Anton is the closest installed face to the classic game "money/mission" lettering.
+   .gta-money  = green cash-counter price ($39.99)      .gta-title = big white/yellow outlined headline
+   .gta-mission = "MISSION PASSED"-style gold banner text   .gta-pink = GTA 6 sunset-gradient headline */
+.gta-money,.gta-title,.gta-mission,.gta-pink{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.9;
+  paint-order:stroke fill;-webkit-text-stroke:18px #000;letter-spacing:.01em}
+.gta-money{color:#7ee35a;text-shadow:8px 10px 0 #000,0 0 40px rgba(126,227,90,.45)}
+.gta-title{color:#fff;text-shadow:8px 10px 0 #000}
+.gta-mission{color:#ffcf3f;text-shadow:8px 10px 0 #000,0 0 40px rgba(255,207,63,.5)}
+.gta-pink{background:linear-gradient(180deg,#ffe36b 0%,#ff8a3d 40%,#ff2e93 75%,#b82bd6 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:0;filter:drop-shadow(0 0 0 #000) drop-shadow(5px 0 0 #000) drop-shadow(-5px 0 0 #000) drop-shadow(0 5px 0 #000) drop-shadow(0 -5px 0 #000) drop-shadow(8px 12px 0 #000)}
+.gta-hud{font-family:Montserrat,Inter,sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;color:#fff;
+  background:rgba(0,0,0,.72);padding:14px 26px;border-left:10px solid #ff2e93;letter-spacing:.04em}

@@ -261,6 +261,18 @@ BLACKFRIDAY look and the "never 3 in a row" rule for these dates (image or video
   class `.neo` (Anton condensed italic, sunset gradient fill, dark outline, neon glow; `.neo.cyan` variant). Go big and
   loud: loading-screen / game-HUD feel — split-panel "loading screen" art, mission cards ("MISSION: FIX YOUR SCREEN"),
   wanted-level stars, "+RESPECT" / "MISSION PASSED"-style pop-ups, minimap pin for 4257 E Main St, neon glow, VHS sheen.
+- Owner (2026-11-19, follow-up): typography must look like the GAME's lettering and the background must look like a
+  real VICE CITY scene — not just gradients. Use:
+  - Backgrounds: `_kit/photos/vice/vice_day1_1080x1920.jpg`, `vice_day2_…` (sunset beach boulevard, pastel art-deco hotels,
+    palms, pink convertible) for VICE days; `vice_night1_…`, `vice_night2_…` (neon night boulevard) for VICEFRIDAY days.
+    Original AI illustrations made for VIP (Higgsfield). For 1080x1350 image posts use background-size:cover. Can make more
+    with Higgsfield gpt_image_2_6 (same prompt style, "no text, no logos, no people") if variety is needed.
+  - Type: `_kit/templates/gta_type.css` — `.gta-money` (green cash-counter price, e.g. $39.99), `.gta-title` (white,
+    thick black outline + hard shadow), `.gta-pink` (GTA 6 sunset gradient headline), `.gta-mission` (gold
+    "MISSION PASSED"-style, use for the phone number), `.gta-hud` (black HUD bar labels). Example layout owner saw:
+    `_kit/templates/gta_image_example.html`. Every price/number in these posts uses `.gta-money` or `.gta-mission`.
+  - If the owner adds the free "Pricedown" font file to Drive folder 5 (Brand), download it to `_kit/brand/` and use it
+    via @font-face in gta_type.css instead of Anton.
 - Inspired look ONLY: never write "GTA", "Grand Theft Auto", "Vice City", "Rockstar", never use their logo, characters,
   screenshots or exact logo lettering (keeps posts boost-safe). Keep the VIP logo pill + a touch of VIP red.
 - Combined days: colors only — still NO Black Friday deal unless the owner approves one in chat (owner: "no need for
