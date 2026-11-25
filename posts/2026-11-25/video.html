@@ -1,0 +1,127 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../_kit/templates/gta_type.css"><style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden}
+body{background:#05010c;font-family:Inter;position:relative}
+.bg{position:absolute;inset:-60px;background:url(../../_kit/photos/vice/vice_night2_1080x1920.jpg) center/cover;animation:zoom 12.4s linear both}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.bg2{position:absolute;inset:-60px;background:url(../../_kit/photos/vice/vice_night1_1080x1920.jpg) center 30%/cover;opacity:0;animation:fadein .35s linear 6.4s both, zoom2 6s linear 6.4s both}
+@keyframes fadein{to{opacity:1}}@keyframes zoom2{from{transform:scale(1)}to{transform:scale(1.1)}}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(10,0,25,.25) 35%,rgba(10,0,25,.35) 62%,rgba(0,0,0,.8))}
+.vhs{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 5px);z-index:20}
+.flash{position:absolute;inset:0;background:#fff;z-index:19;opacity:0;animation:flash .25s linear 2.05s both}
+@keyframes flash{0%{opacity:0}30%{opacity:.85}100%{opacity:0}}
+.logo{position:absolute;left:330px;top:70px;height:100px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;display:flex;align-items:center;justify-content:center;padding:0 36px;z-index:15;box-shadow:0 0 0 4px #D71928}
+.logo img{mix-blend-mode:lighten;width:100%;display:block}
+.wanted{position:absolute;right:46px;top:90px;z-index:15;font-size:46px;-webkit-text-stroke:3px #000;paint-order:stroke fill;color:#555}
+.wanted b{color:#f5c542;animation:stars 1s steps(1) 2.1s 2 both}
+@keyframes stars{0%,50%{opacity:1}25%,75%{opacity:.15}100%{opacity:1}}
+.pin{position:absolute;left:46px;top:78px;z-index:15;width:90px;height:90px;border-radius:50%;background:rgba(0,0,0,.7);border:5px solid #2ef2e0;box-shadow:0 0 24px #2ef2e0;display:flex;align-items:center;justify-content:center;font-size:46px}
+.sc{position:absolute;inset:0;opacity:0;z-index:5}
+.s1{animation:show 2.9s linear 0s both}
+.s2{animation:show 3.5s linear 2.9s both}
+.s3{animation:show 2.8s linear 6.4s both}
+.s4{animation:last 3.2s linear 9.2s both}
+@keyframes show{0%{opacity:0}4%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes last{0%{opacity:0}6%{opacity:1}100%{opacity:1}}
+.pop{animation:pop .42s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes pop{from{transform:scale(.2) rotate(-8deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+.slideL{animation:slideL .42s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes slideL{from{transform:translateX(-1000px)}to{transform:none}}
+.slideR{animation:slideR .42s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes slideR{from{transform:translateX(1000px)}to{transform:none}}
+.drop{animation:drop .5s cubic-bezier(.3,1.5,.5,1) both}
+@keyframes drop{from{transform:translateY(-900px) rotate(-10deg)}to{transform:rotate(-2deg)}}
+.center{position:absolute;left:40px;right:40px;text-align:center}
+/* S1 checklist hook */
+.hud1{top:260px}.hud1 .gta-hud{font-size:46px;border-left-color:#2ef2e0}
+.list{position:absolute;left:110px;right:110px;top:400px}
+.row{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px;background:rgba(0,0,0,.62);border:4px solid #2ef2e0;border-radius:18px;padding:22px 36px;box-shadow:0 0 26px rgba(46,242,224,.45)}
+.row .t{font:900 italic 74px Montserrat;color:#fff;text-transform:uppercase}
+.row .m{font:900 82px Montserrat;color:#7ee35a;-webkit-text-stroke:3px #000;paint-order:stroke fill}
+.row.bad{border-color:#ff2e93;box-shadow:0 0 34px rgba(255,46,147,.8)}
+.row.bad .m{color:#ff3b4a}
+.row.bad{animation:pop .42s cubic-bezier(.2,1.6,.4,1) 1.55s both, shake .45s linear 2.05s both}
+@keyframes shake{0%,100%{transform:none}20%{transform:translate(-22px,6px) rotate(-2deg)}40%{transform:translate(18px,-6px) rotate(2deg)}60%{transform:translate(-12px,4px)}80%{transform:translate(8px,0)}}
+.crackwrap{position:absolute;left:0;right:0;top:860px;height:700px}
+.crack{position:absolute;inset:0;width:100%;height:100%;stroke:#fff;stroke-width:6;fill:none;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw .3s linear 2.05s forwards;filter:drop-shadow(0 0 6px #ff2e93)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.uhoh{top:1200px;font-size:150px}
+.uhoh div{transform:rotate(-5deg)}
+/* S2 review */
+.hud2{top:250px}.hud2 .gta-hud{font-size:44px;border-left-color:#f5c542}
+.stars{top:350px;font-size:120px;letter-spacing:8px;color:#f5c542;-webkit-text-stroke:4px #000;paint-order:stroke fill;text-shadow:0 0 30px rgba(245,197,66,.7)}
+.stars span{display:inline-block;animation:pop .35s cubic-bezier(.2,1.6,.4,1) both}
+.card{position:absolute;left:80px;right:80px;top:540px;background:#fff;border:7px solid #000;border-radius:26px;box-shadow:14px 18px 0 #000,0 0 50px rgba(255,46,147,.6);padding:44px 46px 40px;transform:rotate(-2deg)}
+.card .q{font:800 56px/1.18 Inter;color:#111}
+.card .q b{color:#D71928}
+.card .who{margin-top:28px;font:700 36px Inter;color:#555;display:flex;align-items:center;gap:16px}
+.card .g{width:54px;height:54px;border-radius:50%;background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 75%,#ea4335 0);display:flex;align-items:center;justify-content:center;font:900 30px Inter;color:#fff}
+.chip{position:absolute;right:70px;top:1180px;font-size:40px;transform:rotate(5deg);border-left-color:#f5c542!important}
+.t25{top:1290px;font-size:120px}
+/* S3 mission passed + lifetime */
+.passed{top:270px;font-size:150px}
+.resp{top:450px}.resp .gta-hud{display:inline-block;font-size:42px;border-left-color:#7ee35a;transform:rotate(-3deg)}
+.h3{top:590px;font-size:84px}
+.price{top:790px;font-size:250px}
+.perk{top:1060px}.perk .gta-hud{display:inline-block;font-size:36px;white-space:nowrap;margin:8px 0}
+/* S4 end */
+.e1{top:280px;font-size:100px}
+.call{top:560px;font-size:156px;animation:pop .45s cubic-bezier(.2,1.6,.4,1) both}
+.call div{animation:pulse 1s ease-in-out 10.2s 2}
+@keyframes pulse{50%{transform:scale(1.07)}}
+.walk{top:770px}.walk .gta-hud{display:inline-block;font-size:34px;white-space:nowrap}
+.hol{top:880px}.hol .gta-hud{display:inline-block;font-size:34px;white-space:nowrap;border-left-color:#2ef2e0}
+.thx{top:1010px;font-size:92px}
+</style></head><body>
+<div class="bg"></div><div class="bg2"></div><div class="shade"></div>
+<div class="pin">📍</div>
+<div class="logo"><img src="../../_kit/brand/logo_pill.jpg"></div>
+<div class="wanted"><b>★★★</b>★★</div>
+
+<!-- S1 hook 0-2.9: Thanksgiving checklist -->
+<div class="sc s1">
+  <div class="center hud1 slideL" style="animation-delay:.02s"><span class="gta-hud">Thanksgiving · 4:12 PM</span></div>
+  <div class="list">
+    <div class="row pop" style="animation-delay:.3s"><span class="t">Turkey 🦃</span><span class="m">✓</span></div>
+    <div class="row pop" style="animation-delay:.75s"><span class="t">Pie 🥧</span><span class="m">✓</span></div>
+    <div class="row pop" style="animation-delay:1.15s"><span class="t">Family pics 📸</span><span class="m">✓</span></div>
+    <div class="row bad"><span class="t">Phone screen</span><span class="m">✗</span></div>
+  </div>
+  <div class="crackwrap"><svg class="crack" viewBox="0 0 1080 700" preserveAspectRatio="none"><path d="M540 40 L470 -40 M540 40 L640 -30 M540 40 L520 180 L430 300 L300 360 M520 180 L620 290 L780 330 L1000 300 M430 300 L380 460 M620 290 L660 470"/></svg></div>
+  <div class="center uhoh"><div class="gta-title pop" style="animation-delay:2.2s;color:#ff3b4a">Uh-oh.</div></div>
+</div>
+
+<!-- S2 real review 2.9-6.4 -->
+<div class="sc s2">
+  <div class="center hud2 slideR" style="animation-delay:2.95s"><span class="gta-hud">Real Google review</span></div>
+  <div class="center stars"><span style="animation-delay:3.05s">★</span><span style="animation-delay:3.15s">★</span><span style="animation-delay:3.25s">★</span><span style="animation-delay:3.35s">★</span><span style="animation-delay:3.45s">★</span></div>
+  <div class="card drop" style="animation-delay:3.4s">
+    <div class="q">"They fixed my IPhone16 PRO MAX on <b>THANKSGIVING!!!</b> My phone was literally fixed in 25m and at a fair price."</div>
+    <div class="who"><span class="g">G</span>Pamper P. · Google review</div>
+  </div>
+  <div class="gta-hud chip pop" style="animation-delay:4.4s">4.9★ on Google</div>
+  <div class="center t25"><div class="gta-money pop" style="animation-delay:4.8s">25 min ✓</div></div>
+</div>
+
+<!-- S3 mission passed + lifetime protector 6.4-9.2 -->
+<div class="sc s3">
+  <div class="center passed"><div class="gta-mission pop" style="animation-delay:6.45s">Holiday saved</div></div>
+  <div class="center resp pop" style="animation-delay:6.75s"><span class="gta-hud">+ RESPECT · Back to the table</span></div>
+  <div class="center h3"><div class="gta-title slideL" style="animation-delay:7.0s">Lifetime<br>screen protector</div></div>
+  <div class="center price"><div class="gta-money pop" style="animation-delay:7.4s">$39.99</div></div>
+  <div class="center perk">
+    <div class="gta-hud slideR" style="animation-delay:7.8s;border-left-color:#7ee35a">Pay once · Free replacements for life</div><br>
+    <div class="gta-hud slideL" style="animation-delay:8.05s;border-left-color:#D71928">🎁 FREE protector with every repair</div>
+  </div>
+</div>
+
+<!-- S4 end 9.2-12.4 -->
+<div class="sc s4">
+  <div class="center e1"><div class="gta-pink pop" style="animation-delay:9.25s">Cracked over<br>the holidays?</div></div>
+  <div class="center call" style="animation-delay:9.6s"><div class="gta-mission">380-271-8085</div></div>
+  <div class="center walk slideL" style="animation-delay:10.0s"><span class="gta-hud">Call or walk in · 4257 E Main St, Whitehall</span></div>
+  <div class="center hol slideR" style="animation-delay:10.25s"><span class="gta-hud">Holiday hours? Call ahead 📞</span></div>
+  <div class="center thx"><div class="gta-title pop" style="animation-delay:10.6s">Happy Thanksgiving!</div></div>
+</div>
+<div class="flash"></div>
+<div class="vhs"></div>
+</body></html>
