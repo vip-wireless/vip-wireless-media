@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../_kit/templates/gta_type.css"><style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1350px;overflow:hidden}
+body{background:#000 url(../../_kit/photos/vice/vice_night2_1080x1920.jpg) center 40%/cover;font-family:Inter}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.75),rgba(10,2,20,.3) 34%,rgba(10,2,20,.45) 62%,rgba(0,0,0,.88))}
+.vhs{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 5px);pointer-events:none;z-index:9}
+.frame{position:absolute;inset:22px;border:4px solid #f5c542;border-radius:26px;box-shadow:0 0 28px rgba(255,46,147,.7),inset 0 0 28px rgba(46,242,224,.35);z-index:8;pointer-events:none}
+.logo{position:absolute;left:330px;top:44px;height:100px;width:420px;overflow:hidden;background:#0a0a0b;border-radius:58px;display:flex;align-items:center;justify-content:center;padding:0 36px;z-index:5;box-shadow:0 0 0 4px #D71928}
+.logo img{mix-blend-mode:lighten;width:100%;display:block}
+.pin{position:absolute;left:52px;top:52px;z-index:5;width:86px;height:86px;border-radius:50%;background:rgba(0,0,0,.7);border:5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:44px}
+.wanted{position:absolute;right:56px;top:66px;z-index:5;font-size:40px;color:#f5c542;-webkit-text-stroke:3px #000;paint-order:stroke fill;letter-spacing:2px}
+.mission{position:absolute;left:0;right:0;top:176px;text-align:center;z-index:4}
+.mission .gta-hud{font-size:32px;border-left-color:#2ef2e0}
+.wrap{position:absolute;left:40px;right:40px;top:236px;text-align:center;z-index:4}
+.t1{font-size:104px;color:#fff}
+.t2{font-size:150px;margin-top:2px;transform:rotate(-3deg);display:inline-block}
+/* camera module */
+.cam{position:absolute;left:84px;top:570px;width:360px;height:360px;border-radius:72px;background:linear-gradient(145deg,#2a2a33,#0d0d12);border:6px solid #3a3a46;box-shadow:0 0 40px rgba(46,242,224,.5),0 20px 40px rgba(0,0,0,.7);z-index:4;transform:rotate(-6deg)}
+.lens{position:absolute;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#5a6aa0 0 8%,#141a33 22%,#05060c 55%,#222 58%,#111 70%,#444 72%,#1a1a1a 100%);box-shadow:inset 0 0 0 8px #555}
+.l1{left:36px;top:36px}.l2{left:36px;top:184px}.l3{left:184px;top:110px}
+.smudge{position:absolute;left:20px;top:150px;width:200px;height:150px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,240,220,.85),rgba(255,240,220,.35) 55%,transparent 72%);filter:blur(6px);transform:rotate(-25deg)}
+.flash{position:absolute;left:226px;top:262px;width:46px;height:46px;border-radius:50%;background:radial-gradient(#fff6d0,#c9a64a)}
+.tag{position:absolute;left:66px;top:960px;z-index:6;transform:rotate(-6deg)}
+.tag .gta-hud{font-size:30px;border-left-color:#ff2e93}
+.list{position:absolute;right:62px;top:520px;width:530px;z-index:6;display:flex;flex-direction:column;gap:18px}
+.card{background:rgba(5,2,15,.82);border:3px solid #2ef2e0;border-radius:20px;padding:16px 24px;box-shadow:0 0 18px rgba(46,242,224,.45)}
+.card .n{font-size:30px;color:#f5c542;font-weight:900;letter-spacing:1px}
+.card .x{font-size:38px;color:#fff;font-weight:800;line-height:1.12;margin-top:4px}
+.card .s{font-size:25px;color:#cfd3ff;margin-top:6px;line-height:1.25}
+.card.red{border-color:#D71928;box-shadow:0 0 18px rgba(215,25,40,.6)}
+.foot{position:absolute;left:0;right:0;bottom:66px;text-align:center;z-index:6}
+.call{font-size:110px}
+.walk{display:inline-block;font-size:25px;margin-top:10px;white-space:nowrap;border-left-color:#D71928}
+</style></head><body><div class="shade"></div>
+<div class="pin">📍</div>
+<div class="logo"><img src="../../_kit/brand/logo_pill.jpg"></div>
+<div class="wanted">★★★★★</div>
+<div class="mission"><span class="gta-hud">Side mission: the family photo</span></div>
+<div class="wrap"><div class="gta-title t1">Blurry family</div><div class="gta-pink t2">Pics?</div></div>
+<div class="cam"><div class="lens l1"></div><div class="lens l2"></div><div class="lens l3"></div><div class="flash"></div><div class="smudge"></div></div>
+<div class="tag"><span class="gta-hud">Gravy fingers? 🦃</span></div>
+<div class="list">
+ <div class="card"><div class="n">01</div><div class="x">Wipe the lens first</div><div class="s">Soft cloth · 2 seconds = sharper pics</div></div>
+ <div class="card"><div class="n">02</div><div class="x">Tap to focus</div><div class="s">Tap the faces before you snap</div></div>
+ <div class="card red"><div class="n">03</div><div class="x">Still blurry or cracked?</div><div class="s">Call us and we'll take a look</div></div>
+</div>
+<div class="foot"><div class="gta-mission call">380-271-8085</div><br><div class="gta-hud walk">Call or walk in · 4257 E Main St · Whitehall</div></div>
+<div class="frame"></div><div class="vhs"></div>
+</body></html>
